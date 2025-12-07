@@ -53,21 +53,14 @@ const config = {
       navbar: {
         title: "راهنمای محصولات",
         logo: {
-          alt: "My Site Logo",
+          alt: "لوگو",
           src: "img/logo.svg",
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "https://www.rtl-theme.com/author/chaveamin/",
+            label: "راست چین",
             position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
           },
         ],
       },

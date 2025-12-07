@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "راهنمای محصولات",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "لوگو",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.راست چین": {
+    "message": "راست چین",
+    "description": "Navbar item with label راست چین"
+  }
+}

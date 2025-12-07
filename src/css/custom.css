@@ -27,3 +27,14 @@
   --ifm-color-primary-lighter: #387cfe;
   --ifm-color-primary-lightest: #6197fe;
 }
+
+html[dir="rtl"] .navbar__search-input {
+  text-align: end;
+}
+html[dir="rtl"] .searchHintContainer_Pkmr {
+  right: 10px !important;
+  left: auto !important;
+}
+.navbar__search-input {
+  padding: 0 2.5em 0 0.5em !important;
+}
