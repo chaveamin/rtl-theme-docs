@@ -29,10 +29,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/",
           sidebarPath: "./sidebars.js",
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -45,7 +43,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       colorMode: {
         respectPrefersColorScheme: true,
@@ -58,9 +55,20 @@ const config = {
         },
         items: [
           {
-            to: "https://www.rtl-theme.com/author/chaveamin/",
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Tutorial",
+          },
+          {
+            to: "https://www.rtl-theme.com/author/chaveamin",
             label: "راست چین",
             position: "left",
+          },
+          {
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
@@ -69,15 +77,6 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-  themes: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        hashed: true,
-      }),
-    ],
-  ],
 };
 
 export default config;
