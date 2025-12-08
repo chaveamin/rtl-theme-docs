@@ -1,10 +1,52 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@font-face {
+  font-family: "pelak";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "pelak";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../../static/font/PelakFA-Black.woff2") format("woff2");
+}
 
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #1062fe;
   --ifm-color-primary-dark: #0154f2;
@@ -16,6 +58,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
+  --ifm-font-family-base: "pelak", tahoma;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,14 +72,15 @@
   --ifm-color-primary-lightest: #6197fe;
 }
 
-html[dir="rtl"] .navbar__search-input {
-  text-align: end;
-}
 html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
 .navbar__search-input {
+  direction: rtl;
+  text-align: end;
+  font-size: 14px;
+  font-family: "pelak", tahoma;
   padding: 0 8px 0 40px !important;
   border-radius: 8px;
   background: var(--ifm-navbar-search-input-background-color)
