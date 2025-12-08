@@ -62,6 +62,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
   --ifm-font-family-base: "pelak", tahoma;
+  --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
 }
 
 [data-theme="dark"] {
@@ -147,7 +148,24 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 
 @supports (scrollbar-gutter: stable) {
   .menu_SIkG {
-    padding: 2.5rem 0.5rem 0.5rem 0;
+    padding: 40px 8px 8px 12px;
     scrollbar-gutter: stable;
   }
+}
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: "";
+}
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: "";
+}
+.menu__link--sublist-caret::after {
+  background-size: 20px;
+}
+.menu__list-item:not(:first-child) {
+  margin-top: 10px;
+}
+.menu__link,
+.menu__caret,
+.menu__list-item-collapsible {
+  border-radius: 8px;
 }

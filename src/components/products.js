@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 
 const ProductList = [
@@ -22,9 +21,9 @@ function Product({ title, description, url }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function Products() {
   return (
-    <section className={styles.features}>
+    <section>
       <div className="container">
         <div className="product-cards">
           {ProductList.map((props, idx) => (
