@@ -51,21 +51,8 @@ const config = {
         title: "راهنمای محصولات",
         logo: {
           alt: "لوگو",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          {
-            to: "https://www.rtl-theme.com/author/chaveamin",
-            label: "راست چین",
-            position: "left",
-          },
-        ],
       },
       prism: {
         theme: prismThemes.github,
