@@ -7,12 +7,7 @@ const ProductList = [
   {
     title: "استیکی",
     description: <>قالب وب اپلیکیشن استیکی</>,
-    url: "/docs/intro",
-  },
-  {
-    title: "استیکی",
-    description: <>قالب وب اپلیکیشن استیکی</>,
-    url: "/docs/intro",
+    url: "/appkit",
   },
 ];
 
