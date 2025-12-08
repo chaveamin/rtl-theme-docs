@@ -80,6 +80,9 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
+main .container {
+  margin-top: 28px;
+}
 .navbar__search-input {
   direction: rtl;
   text-align: end;
