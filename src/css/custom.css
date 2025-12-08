@@ -48,16 +48,16 @@
 }
 
 :root {
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #362ce1;
+  --ifm-color-primary-darker: #2a1fdf;
+  --ifm-color-primary-darkest: #231ab8;
+  --ifm-color-primary-light: #6860e9;
+  --ifm-color-primary-lighter: #746deb;
+  --ifm-color-primary-lightest: #9a95f0;
+  --ifm-heading-color: #27272a;
   --ifm-navbar-shadow: 0 19px 28px rgba(0, 0, 0, 0.02),
     0 0px 42px rgba(0, 0, 0, 0.06);
-  --ifm-heading-color: #27272a;
-  --ifm-color-primary: #fff;
-  --ifm-color-primary-dark: #0154f2;
-  --ifm-color-primary-darker: #014fe5;
-  --ifm-color-primary-darkest: #0141bc;
-  --ifm-color-primary-light: #2b74fe;
-  --ifm-color-primary-lighter: #387cfe;
-  --ifm-color-primary-lightest: #6197fe;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
@@ -65,14 +65,14 @@
 }
 
 [data-theme="dark"] {
-  --ifm-heading-color: #f4f4f5;
-  --ifm-color-primary: #09090b;
-  --ifm-color-primary-dark: #0154f2;
-  --ifm-color-primary-darker: #014fe5;
-  --ifm-color-primary-darkest: #0141bc;
-  --ifm-color-primary-light: #2b74fe;
-  --ifm-color-primary-lighter: #387cfe;
-  --ifm-color-primary-lightest: #6197fe;
+  --ifm-color-primary: #a5b4fc;
+  --ifm-color-primary-dark: #7d92fb;
+  --ifm-color-primary-darker: #6882fa;
+  --ifm-color-primary-darkest: #2c4ff8;
+  --ifm-color-primary-light: #cdd6fd;
+  --ifm-color-primary-lighter: #e2e6fe;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-heading-color: #eef2ff;
 }
 
 html[dir="rtl"] .searchHintContainer_Pkmr {
@@ -109,5 +109,38 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 [data-theme="dark"] .hero {
   background-image: none;
   background-color: #09090b;
-  border-bottom: 1px solid #27272a;
+  border-bottom-color: #27272a;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.product-cards > * {
+  flex: 1 1 10em;
+}
+.product-card {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  text-align: right;
+  border: 2px solid #e4e4e7;
+  border-radius: 12px;
+  color: #09090b;
+  transition: all 0.1s ease;
+  text-decoration: none;
+  padding: 24px;
+}
+.product-card * {
+  margin: 0;
+}
+.product-card h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.product-card:hover {
+  background-color: #eef2ff;
+  border-color: #6366f1;
 }
