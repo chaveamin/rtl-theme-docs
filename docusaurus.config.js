@@ -65,11 +65,6 @@ const config = {
             label: "راست چین",
             position: "left",
           },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       prism: {
@@ -83,6 +78,7 @@ const config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
+        searchBarShortcutKeymap: " ",
       }),
     ],
   ],
