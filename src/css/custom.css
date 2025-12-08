@@ -125,9 +125,9 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   align-items: start;
   flex-direction: column;
   text-align: right;
-  border: 2px solid #e4e4e7;
+  border: 2px solid var(--ifm-color-emphasis-200);
   border-radius: 12px;
-  color: #09090b;
+  color: var(--ifm-color-primary);
   transition: all 0.1s ease;
   text-decoration: none;
   padding: 24px;
@@ -141,6 +141,6 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   font-weight: 700;
 }
 .product-card:hover {
-  background-color: #eef2ff;
+  background-color: var(--ifm-color-emphasis-200);
   border-color: #6366f1;
 }
