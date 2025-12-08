@@ -48,7 +48,10 @@
 }
 
 :root {
-  --ifm-color-primary: #1062fe;
+  --ifm-navbar-shadow: 0 19px 28px rgba(0, 0, 0, 0.02),
+    0 0px 42px rgba(0, 0, 0, 0.06);
+  --ifm-heading-color: #27272a;
+  --ifm-color-primary: #fff;
   --ifm-color-primary-dark: #0154f2;
   --ifm-color-primary-darker: #014fe5;
   --ifm-color-primary-darkest: #0141bc;
@@ -61,9 +64,9 @@
   --ifm-font-family-base: "pelak", tahoma;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #1062fe;
+  --ifm-heading-color: #f4f4f5;
+  --ifm-color-primary: #09090b;
   --ifm-color-primary-dark: #0154f2;
   --ifm-color-primary-darker: #014fe5;
   --ifm-color-primary-darkest: #0141bc;
@@ -90,4 +93,21 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
 html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   left: auto !important;
   right: 0.8rem !important;
+}
+
+.hero__title {
+  font-weight: 800;
+}
+.hero {
+  background-color: #eef2ff;
+  border-bottom: 1px solid #e0e7ff;
+  background-image: url("../../static/img/hero-bg.jpg");
+  background-position: left;
+  background-size: 650px;
+  background-repeat: no-repeat;
+}
+[data-theme="dark"] .hero {
+  background-image: none;
+  background-color: #09090b;
+  border-bottom: 1px solid #27272a;
 }
