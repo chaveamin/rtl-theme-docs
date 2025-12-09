@@ -46,6 +46,11 @@
   font-style: normal;
   src: url("../../static/font/PelakFA-Black.woff2") format("woff2");
 }
+@font-face {
+  font-family: "JB";
+  src: url("../../static/font/JetBrainsMono.ttf") format("truetype-variations");
+  font-weight: 1 800;
+}
 
 :root {
   --ifm-color-primary: #4f46e5;
@@ -64,6 +69,7 @@
   --ifm-font-family-base: "pelak", tahoma;
   --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
   --ifm-code-border-radius: 12px;
+  --ifm-font-family-monospace: "JB";
 }
 
 [data-theme="dark"] {
@@ -75,6 +81,11 @@
   --ifm-color-primary-lighter: #e2e6fe;
   --ifm-color-primary-lightest: #ffffff;
   --ifm-heading-color: #eef2ff;
+}
+
+code,
+pre {
+  font-feature-settings: "ss19";
 }
 
 html[dir="rtl"] .searchHintContainer_Pkmr {
@@ -182,4 +193,13 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   border-radius: 10px;
   width: 40px;
   height: 40px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid #e4e4e7;
+  padding-bottom: 10px;
 }
