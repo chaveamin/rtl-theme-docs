@@ -63,6 +63,7 @@
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
   --ifm-font-family-base: "pelak", tahoma;
   --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
+  --ifm-code-border-radius: 12px;
 }
 
 [data-theme="dark"] {
@@ -151,8 +152,7 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 
 @supports (scrollbar-gutter: stable) {
   .menu_SIkG {
-    padding: 40px 8px 8px 12px;
-    scrollbar-gutter: stable;
+    padding: 40px 8px 8px 12px !important;
   }
 }
 .pagination-nav__link--next .pagination-nav__label::after {
@@ -171,4 +171,15 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 .menu__caret,
 .menu__list-item-collapsible {
   border-radius: 8px;
+}
+.breadcrumbsContainer_Z_bl {
+  margin-bottom: 48px;
+}
+.backToTopButton_sjWU::after {
+  mask-size: 24px;
+}
+.backToTopButton_sjWU {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
 }
