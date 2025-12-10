@@ -62,7 +62,7 @@ sidebar_position: 3
 
 :::
 
-#### تگ body
+### body
 
 تگ body برای کنترل تم صفحه و همچنین رنگ هایلایت و پس زمینه استفاده میشود.
 
@@ -72,30 +72,49 @@ sidebar_position: 3
 
 برای حالت تاریک از **theme-dark**، برای حالت روشن از **theme-light** و برای تشخیص خودکار تنظیمات دستگاه خود از **detect-theme** استفاده کنید. اگر این قابلیت توسط دستگاه شما پشتیبانی نشود، صفحه به طور خودکار روی **theme-light** تنظیم میشود. اکثر دستگاه‌های مدرن اکنون از تشخیص خودکار تم پشتیبانی میکنند و میتوانید این مورد را در صفحه component-auto-dark.html بررسی کنید.
 
-#### header
+### header
 
 هدر قالب به گونه ای طراحی شده است که استفاده از آن بسیار آسان است و انعطاف پذیر است. با این گفته، هدر در حال حاضر از چند سبک پشتیبانی میکند که در زیر توضیح داده میشود و میتوان آنها را در صفحه component-headers.html مشاهده و استفاده کرد.
 
+<!-- prettier-ignore -->
 ```html showLineNumbers
 <div class="header header-fixed header-logo-left">
-  <a href="index.html" class="header-title">AppKit Mobile</a>
-  <a href="#" class="header-icon header-icon-1"
-    ><i class="fas fa-envelope"></i
-    ><span class="badge bg-green1-dark">5</span></a
-  >
-  <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
-  <a href="#" class="header-icon header-icon-3"
-    ><i class="fas fa-heart color-red2-light"></i
-  ></a>
-  <a href="#" class="header-icon header-icon-4"
-    ><i class="fas fa-share-alt"></i
-  ></a>
+    <a href="index.html" class="header-title">AppKit Mobile</a>
+    <a href="#" class="header-icon header-icon-1"><i class="fas fa-envelope"></i><span class="badge bg-green1-dark">5</span></a>
+    <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+    <a href="#" class="header-icon header-icon-3"><i class="fas fa-heart color-red2-light"></i></a>
+    <a href="#" class="header-icon header-icon-4"><i class="fas fa-share-alt"></i></a>
 </div>
 ```
 
 **خط 1**: کلاس wrapping اصلی است. این شامل کلاس **header**، برای تعریف عنصر و **header-fixed** است، که باعث میشود هدر در بالای صفحه ثابت بماند و همچنین، کلاسی که برای تعیین استایل استفاده میشود. میتوانید از هر یک از کلاس های زیر استفاده کنید.
 
-- header-logo-left - لوگوی سمت چپ با 4 آیکون در سمت راست
-- header-logo-right - لوگوی سمت راست با 4 آیکون در سمت چپ
-- header-logo-center - لوگوی وسط با 2 آیکون در راست و 2 آیکون در چپ
-- header-logo-app - یک آیکون در سمت چپ، لوگو و 3 آیکون در سمت راست.
+- **header-logo-left** - لوگوی سمت چپ با 4 آیکون در سمت راست
+- **header-logo-right** - لوگوی سمت راست با 4 آیکون در سمت چپ
+- **header-logo-center** - لوگوی وسط با 2 آیکون در راست و 2 آیکون در چپ
+- **header-logo-app** - یک آیکون در سمت چپ، لوگو و 3 آیکون در سمت راست.
+
+**خط 2**: لوگوی هدر است. میتواند یک تصویر یا یک متن باشد. با تنظیم کلاس **header-title** روی **header-logo** میتوانید لوگو را به عنوان تصویر انتخاب کنید. تصویر لوگو را میتوان با جستجوی "header-logo" در فایل اصلی css پیدا کرد و آن را با تصویر خود جایگزین کرد.
+
+**خطوط 3،4،5،6** آیکون های هدر هستند. با استفاده از header-icon-1 تا 4، شماره گذاری میشوند و میتوانید موقعیت آنها را بر اساس این عدد تغییر دهید.
+
+### footer
+
+منوی فوتر چیزی است که به قالب جان بخشیده است. برای مشاهده تمام نوارهای فوتر موجود، صفحه component-footers.html را بررسی کنید، جایی که میتوانید آنها را مستقیماً در صفحات خود کپی و پیست کنید.
+
+<!-- prettier-ignore -->
+```html showLineNumbers
+<div id="footer-bar" class="footer-bar-1">
+    <a href="#"><i class="fa fa-home"></i><span>Home</span></a>
+    <a href="#" class="active-nav"><i class="fa fa-star"></i><span>Features</span></a>
+    <a href="#"><i class="fa fa-heart"></i><span>Pages</span></a>
+    <a href="#"><i class="fa fa-search"></i><span>Search</span></a>
+    <a href="#"><i class="fa fa-cog"></i><span>Settings</span></a>
+</div>
+```
+
+منوی فوتر قالب محدود به تعداد آیتم های شما در آن نیست. فوتر با استفاده از Flexbox ساخته شده است، بنابراین به طور خودکار همه موارد را به تنهایی محاسبه و تراز میکند. با این حال توجه داشته باشید که دستگاه هایی با صفحه نمایش کوچک وجود دارند، بنابراین استفاده از بیش از 5 آیکون توصیه نمیشود. در داخل id نوار فوتر، لینک ها و آیکون های FontAwesome 6 خواهید داشت. در صورت نیاز آنها را ویرایش یا تغییر دهید. برای هایلایت یا فعال کردن صفحه کافی است active-nav را به منوی فوتری که میخواهید اضافه کنید.
+
+### نتیجه گیری
+
+ساختار صفحه با استفاده از صفحه starter.html که در قالب موجود است، تا حد امکان ساده در نظر گرفته شده است، عناصر فوق را در داخل آن خواهید یافت و میتوانید بلافاصله شروع به قرار دادن محتوای خود در داخل کلاس page-content کنید.
