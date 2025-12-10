@@ -123,7 +123,7 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "آخرین به روز رسانی{atDate}{byUser}",
+    "message": "آخرین آپدیت{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
