@@ -156,3 +156,9 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 .table-of-contents__link--active {
   font-weight: 800;
 }
+
+p > code,
+li > code {
+  border-radius: 6px;
+  padding: 1.6px 6px;
+}
