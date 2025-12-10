@@ -1,55 +1,9 @@
 @font-face {
-  font-family: "pelak";
-  font-weight: 100;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-Thin.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 200;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-light.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-SemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 600;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "pelak";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../../static/font/PelakFA-Black.woff2") format("woff2");
-}
-@font-face {
-  font-family: "JB";
-  src: url("../../static/font/JetBrainsMono.ttf") format("truetype-variations");
-  font-weight: 1 800;
+  font-family: "IRANYekan";
+  src: url("../../static/font/IRANYekanXVF.woff2") format("woff2-variations"),
+    url("../../static/font/IRANYekanXVF.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-display: fallback;
 }
 
 :root {
@@ -66,10 +20,9 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
-  --ifm-font-family-base: "pelak", tahoma;
+  --ifm-font-family-base: "IRANYekan", tahoma;
   --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
   --ifm-code-border-radius: 12px;
-  --ifm-font-family-monospace: "JB";
 }
 
 [data-theme="dark"] {
@@ -83,11 +36,10 @@
   --ifm-heading-color: #eef2ff;
 }
 
-code,
-pre {
-  font-feature-settings: "ss19";
+html {
+  font-variation-settings: "dots" 1;
+  font-feature-settings: "ss02";
 }
-
 html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
@@ -99,7 +51,7 @@ main .container {
   direction: rtl;
   text-align: end;
   font-size: 14px;
-  font-family: "pelak", tahoma;
+  font-family: "IRANYekan", tahoma;
   padding: 0 8px 0 40px !important;
   border-radius: 8px;
   background: var(--ifm-navbar-search-input-background-color)
@@ -193,13 +145,4 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   border-radius: 10px;
   width: 40px;
   height: 40px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  border-bottom: 1px solid #e4e4e7;
-  padding-bottom: 10px;
 }

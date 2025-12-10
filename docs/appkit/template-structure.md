@@ -29,7 +29,7 @@ sidebar_position: 3
 **خط 5** – محتوای صفحه است. همه المان های درون صفحه ای را شامل میشود(همه المان ها، بجز چند مورد که در زیر توضیح داده شده است)\
 **خط 7** – اتمام محتوای صفحه.\
 **خط 8** – جایی است که المان های خارج از صفحه را در آن قرار داده شده است (منوها، مدال ها، اسنک بارها).\
-**خط 9** – اتمام تگ اصلی صفحه، از این قسمت به بعد لطفاً محتوای بیشتری اضافه نکنید.\
+**خط 9** – اتمام تگ اصلی صفحه، از این قسمت به بعد لطفاً محتوای بیشتری اضافه نکنید.
 
 :::tip
 
@@ -75,3 +75,22 @@ sidebar_position: 3
 #### header
 
 هدر قالب به گونه ای طراحی شده است که استفاده از آن بسیار آسان است و انعطاف پذیر است. با این گفته، هدر در حال حاضر از چند سبک پشتیبانی میکند که در زیر توضیح داده میشود و میتوان آنها را در صفحه component-headers.html مشاهده و استفاده کرد.
+
+```html showLineNumbers
+<div class="header header-fixed header-logo-left">
+  <a href="index.html" class="header-title">AppKit Mobile</a>
+  <a href="#" class="header-icon header-icon-1"
+    ><i class="fas fa-envelope"></i
+    ><span class="badge bg-green1-dark">5</span></a
+  >
+  <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+  <a href="#" class="header-icon header-icon-3"
+    ><i class="fas fa-heart color-red2-light"></i
+  ></a>
+  <a href="#" class="header-icon header-icon-4"
+    ><i class="fas fa-share-alt"></i
+  ></a>
+</div>
+```
+
+**خط 1**
