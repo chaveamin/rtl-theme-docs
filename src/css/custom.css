@@ -159,7 +159,14 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 }
 
 p > code,
-li > code {
+li > code,
+strong > code {
   border-radius: 6px;
   padding: 1.6px 6px;
+}
+.table-of-contents [href="#کارت-ها"]::after {
+  content: url("../../static/img/danger.svg");
+  vertical-align: middle;
+  margin-left: 8rem;
+  display: inline-block;
 }
