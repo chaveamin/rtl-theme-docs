@@ -17,6 +17,7 @@
   --ifm-heading-color: #27272a;
   --ifm-navbar-shadow: 0 19px 28px rgba(0, 0, 0, 0.02),
     0 0px 42px rgba(0, 0, 0, 0.06);
+  --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
@@ -64,17 +65,6 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   right: 0.8rem !important;
 }
 
-.hero__title {
-  font-weight: 800;
-}
-.hero {
-  background-color: #eef2ff;
-  border-bottom: 1px solid #e0e7ff;
-  background-image: url("../../static/img/hero-bg.jpg");
-  background-position: left;
-  background-size: 650px;
-  background-repeat: no-repeat;
-}
 [data-theme="dark"] .hero {
   background-image: none;
   background-color: #09090b;
@@ -164,9 +154,16 @@ strong > code {
   border-radius: 6px;
   padding: 1.6px 6px;
 }
-.table-of-contents [href="#کارت-ها"]::after {
+p > img {
+  border: 2px solid var(--ifm-color-secondary-light);
+  border-radius: 12px;
+  box-shadow: var(--img-shadow);
+}
+.table-of-contents__link {
+  display: flex;
+}
+.table-of-contents [href="#action-sheets-modals"]::after {
   content: url("../../static/img/danger.svg");
   vertical-align: middle;
-  margin-left: 8rem;
-  display: inline-block;
+  margin-left: auto;
 }
