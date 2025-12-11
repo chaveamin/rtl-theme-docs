@@ -61,11 +61,16 @@ const config = {
       },
     }),
   themes: [
+    // ... Your other themes.
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
+        language: ["ar"],
+        docsRouteBasePath: "/",
+        indexBlog: false,
+        indexPages: true,
       }),
     ],
   ],
