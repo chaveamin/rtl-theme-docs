@@ -147,7 +147,8 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   width: 40px;
   height: 40px;
 }
-.table-of-contents__link {
+.table-of-contents__link,
+.linkLabel_WmDU {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
