@@ -25,6 +25,7 @@
   --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
   --ifm-code-border-radius: 12px;
   --ifm-heading-font-weight: 800;
+  --ifm-toc-padding-vertical: 14px;
 }
 
 [data-theme="dark"] {
@@ -162,7 +163,9 @@ p > img {
 .table-of-contents__link {
   display: flex;
 }
-.table-of-contents [href="#action-sheets-modals"]::after {
+.table-of-contents [href="#مودال-و-برگه-های-اقدام"]::after,
+.table-of-contents [href="#تبلیغات"]::after,
+.table-of-contents [href="#بازگشت-به-بالا"]::after {
   content: url("../../static/img/danger.svg");
   vertical-align: middle;
   margin-left: auto;
