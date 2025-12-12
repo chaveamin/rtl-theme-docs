@@ -170,3 +170,7 @@ p > img {
   vertical-align: middle;
   margin-left: auto;
 }
+
+.product-list-sidebar-item {
+  display: none;
+}

@@ -2,6 +2,12 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  scripts: [
+    {
+      src: "src/js/script.js",
+      async: true,
+    },
+  ],
   title: "راهنمای محصولات راست چین",
   tagline: "",
   favicon: "img/favicon.ico",
@@ -61,7 +67,6 @@ const config = {
       },
     }),
   themes: [
-    // ... Your other themes.
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
