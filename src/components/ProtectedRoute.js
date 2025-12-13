@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
-// Password for each parent route (automatically protects all children)
 const parentRoutePasswords = {
   "/appkit": "appkit123",
 };
@@ -9,32 +8,31 @@ const parentRoutePasswords = {
 const ProtectedRoute = ({ children, currentPath }) => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isChecking, setIsChecking] = useState(true);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [parentRoute, setParentRoute] = useState("");
 
-  // Get parent route from current path
   const getParentRoute = (path) => {
-    // Extract first segment after initial slash (e.g., /appkit/intro -> /appkit)
     const match = path.match(/^\/([^\/]+)/);
     return match ? `/${match[1]}` : "";
   };
 
-  // Check if session is still valid (3 days)
   const isSessionValid = (timestamp) => {
     if (!timestamp) return false;
     const threeDays = 3 * 24 * 60 * 60 * 1000;
     return Date.now() - timestamp < threeDays;
   };
 
-  // Check authentication on mount and when path changes
   useEffect(() => {
+    setIsChecking(true);
+
     const parent = getParentRoute(currentPath);
     setParentRoute(parent);
 
-    // Check if this parent route is protected
     if (!parentRoutePasswords[parent]) {
       setIsAuthenticated(true);
+      setIsChecking(false);
       return;
     }
 
@@ -55,8 +53,10 @@ const ProtectedRoute = ({ children, currentPath }) => {
     } else {
       setIsAuthenticated(false);
     }
+
     setPassword("");
     setError("");
+    setIsChecking(false);
   }, [currentPath]);
 
   const handleSubmit = () => {
@@ -77,7 +77,10 @@ const ProtectedRoute = ({ children, currentPath }) => {
     }
   };
 
-  // If route is not protected or already authenticated, show content
+  if (isChecking) {
+    return null;
+  }
+
   if (isAuthenticated) {
     return children;
   }
