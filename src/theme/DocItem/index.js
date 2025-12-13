@@ -5,6 +5,11 @@ import { useLocation } from "@docusaurus/router";
 
 export default function DocItemWrapper(props) {
   const location = useLocation();
+  const isBuildTime = typeof window === "undefined";
+
+  if (isBuildTime) {
+    return <DocItem {...props} />;
+  }
 
   return (
     <ProtectedRoute currentPath={location.pathname}>
