@@ -26,6 +26,7 @@
   --ifm-code-border-radius: 12px;
   --ifm-heading-font-weight: 800;
   --ifm-toc-padding-vertical: 14px;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }
 
 [data-theme="dark"] {
@@ -186,11 +187,16 @@ html[class*="docs-doc-id-index"] main {
   max-width: 100%;
 }
 
+.menu__list .menu__list {
+  border-left: 1px solid var(--ifm-toc-border-color);
+  margin-left: 18px;
+}
+
 /******** AUTH ********/
 .auth-wrapper {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 16px;
 }
