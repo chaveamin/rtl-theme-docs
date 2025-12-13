@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
 const parentRoutePasswords = {
-  "/appkit": "appkit123",
+  "/appkit": "rtl-theme-appkit-enabled",
 };
 
 const ProtectedRoute = ({ children, currentPath }) => {

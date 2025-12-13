@@ -175,6 +175,17 @@ p > img {
   display: none;
 }
 
+/* remove elements on homepage */
+html[class*="docs-doc-id-index"] aside,
+html[class*="docs-doc-id-index"] footer,
+html[class*="docs-doc-id-index"] .theme-doc-breadcrumbs,
+html[class*="docs-doc-id-index"] .pagination-nav {
+  display: none;
+}
+html[class*="docs-doc-id-index"] main {
+  max-width: 100%;
+}
+
 /******** AUTH ********/
 .auth-wrapper {
   min-height: 100vh;
