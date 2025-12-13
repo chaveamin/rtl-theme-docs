@@ -75,10 +75,10 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 .product-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 24px;
 }
 .product-cards > * {
-  flex: 1 1 10em;
+  width: 18rem;
 }
 .product-card {
   display: flex;

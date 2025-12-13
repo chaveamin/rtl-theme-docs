@@ -22,7 +22,7 @@ const ProductList = [
 
 function Product({ title, description, url }) {
   return (
-    <Link href={url} className={clsx("product-card col")}>
+    <Link href={url} className={clsx("product-card")}>
       <div className="text--left">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
