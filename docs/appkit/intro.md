@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: با تشکر از شما برای خرید قالب
 ---
 
 # معرفی

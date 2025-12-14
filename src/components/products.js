@@ -6,17 +6,17 @@ const ProductList = [
   {
     title: "استیکی",
     description: <>قالب وب اپلیکیشن استیکی</>,
-    url: "/appkit/intro",
+    url: "/category/اپکیت",
   },
   {
     title: "اپکیت",
     description: <>قالب وب اپلیکیشن اپکیت</>,
-    url: "/appkit/intro",
+    url: "/category/اپکیت",
   },
   {
     title: "دیوو",
     description: <>قالب وب اپلیکیشن دیوو</>,
-    url: "/appkit/intro",
+    url: "/category/اپکیت",
   },
 ];
 

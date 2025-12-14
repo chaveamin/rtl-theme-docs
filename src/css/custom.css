@@ -22,11 +22,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url("../../static/img/search-icon.svg");
   --ifm-font-family-base: "IRANYekan", tahoma;
-  --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
   --ifm-code-border-radius: 12px;
   --ifm-heading-font-weight: 800;
   --ifm-toc-padding-vertical: 14px;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+  --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
 }
 
 [data-theme="dark"] {

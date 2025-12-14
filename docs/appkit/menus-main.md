@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: استفاده از منوی اصلی در قالب.
 ---
 
 # منوها(اصلی)

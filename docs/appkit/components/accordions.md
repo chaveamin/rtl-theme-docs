@@ -1,6 +1,5 @@
 ---
-sidebar_position: 2
-description: ساخته شده با استفاده از سیستم جمع شدنی(collapse) بوت استرپ
+description: ساخته شده با استفاده از سیستم collapse بوت استرپ
 ---
 
 # آکاردئون
