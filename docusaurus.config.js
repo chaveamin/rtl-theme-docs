@@ -55,6 +55,9 @@ const config = {
           src: "img/logo.png",
         },
       },
+      footer: {
+        copyright: "طراحی و توسعه توسط امین چاوه پور",
+      },
       prism: {
         theme: prismThemes.oneDark,
       },

@@ -26,8 +26,7 @@
   --ifm-heading-font-weight: 800;
   --ifm-toc-padding-vertical: 14px;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
-  --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
-  --ifm-code-font-size: 85%;
+  --ifm-breadcrumb-border-radius: 7px;
 }
 
 [data-theme="dark"] {
@@ -154,6 +153,7 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 p > code,
 li > code,
 strong > code {
+  --ifm-code-font-size: 85%;
   border-radius: 6px;
   padding: 1.6px 6px;
 }
@@ -165,6 +165,16 @@ p > img {
 
 .product-list-sidebar-item {
   display: none;
+}
+.row:has(> .docCardListItem_wFO5) {
+  margin-bottom: 3rem;
+  padding: 0 16px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+.generatedIndexPage_vN6x {
+  max-width: 100% !important;
 }
 
 /* remove elements on homepage */
