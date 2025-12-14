@@ -189,7 +189,6 @@ html[class*="docs-doc-id-index"] main {
 
 .menu__list .menu__list {
   border-left: 1px solid var(--ifm-toc-border-color);
-  margin-left: 18px;
 }
 
 /******** AUTH ********/
