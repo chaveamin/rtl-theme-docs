@@ -27,6 +27,7 @@
   --ifm-toc-padding-vertical: 14px;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
   --ifm-menu-link-sublist-icon: url("../../static/img/arrow-left-light.svg");
+  --ifm-code-font-size: 85%;
 }
 
 [data-theme="dark"] {
@@ -160,16 +161,6 @@ p > img {
   border: 2px solid var(--ifm-color-secondary-light);
   border-radius: 12px;
   box-shadow: var(--img-shadow);
-}
-.table-of-contents__link {
-  display: flex;
-}
-.table-of-contents [href="#مودال-و-برگه-های-اقدام"]::after,
-.table-of-contents [href="#تبلیغات"]::after,
-.table-of-contents [href="#بازگشت-به-بالا"]::after {
-  content: url("../../static/img/danger.svg");
-  vertical-align: middle;
-  margin-left: auto;
 }
 
 .product-list-sidebar-item {
