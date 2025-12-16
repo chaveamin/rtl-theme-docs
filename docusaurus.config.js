@@ -10,7 +10,7 @@ const config = {
     v4: true,
   },
 
-  url: "https://rtl-theme-docs.ir/",
+  url: "https://docs.designesia.ir/",
   baseUrl: "/",
 
   organizationName: "designesia",

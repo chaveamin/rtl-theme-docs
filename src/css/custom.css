@@ -48,8 +48,8 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
-main .container {
-  margin-top: 28px;
+.main-wrapper {
+  margin-top: 26px;
 }
 .navbar__search-input {
   direction: rtl;
@@ -67,77 +67,13 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   right: 0.8rem !important;
 }
 
-[data-theme="dark"] .hero {
-  background-image: none;
-  background-color: #09090b;
-  border-bottom-color: #27272a;
-}
-
-.product-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.product-cards > * {
-  width: 18rem;
-}
-.product-card {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  text-align: right;
-  border: 2px solid var(--ifm-color-emphasis-200);
-  border-radius: 12px;
-  color: var(--ifm-color-primary);
-  transition: all 0.1s ease;
-  text-decoration: none;
-  padding: 24px;
-}
-.product-card * {
-  margin: 0;
-}
-.product-card h3 {
-  margin-bottom: 12px;
-  font-size: 22px;
-  font-weight: 700;
-}
-.product-card:hover {
-  background-color: var(--ifm-color-emphasis-200);
-  border-color: #6366f1;
-}
-
-@supports (scrollbar-gutter: stable) {
-  .menu_SIkG {
-    padding: 40px 8px 8px 12px !important;
-  }
-}
-.pagination-nav__link--next .pagination-nav__label::after {
-  content: "";
-}
-.pagination-nav__link--prev .pagination-nav__label::before {
-  content: "";
-}
-.menu__link--sublist-caret::after {
-  background-size: 20px;
-}
-.menu__list-item:not(:first-child) {
-  margin-top: 10px;
-}
 .menu__link,
 .menu__caret,
 .menu__list-item-collapsible {
   border-radius: 8px;
 }
-.breadcrumbsContainer_Z_bl {
-  margin-bottom: 48px;
-}
-.backToTopButton_sjWU::after {
-  mask-size: 24px;
-}
 .backToTopButton_sjWU {
   border-radius: 10px;
-  width: 40px;
-  height: 40px;
 }
 .table-of-contents__link,
 .linkLabel_WmDU {
@@ -161,35 +97,6 @@ p > img {
   border: 2px solid var(--ifm-color-secondary-light);
   border-radius: 12px;
   box-shadow: var(--img-shadow);
-}
-
-.product-list-sidebar-item {
-  display: none;
-}
-.row:has(> .docCardListItem_wFO5) {
-  margin-bottom: 3rem;
-  padding: 0 16px;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-}
-.generatedIndexPage_vN6x {
-  max-width: 100% !important;
-}
-
-/* remove elements on homepage */
-html[class*="docs-doc-id-index"] aside,
-html[class*="docs-doc-id-index"] footer,
-html[class*="docs-doc-id-index"] .theme-doc-breadcrumbs,
-html[class*="docs-doc-id-index"] .pagination-nav {
-  display: none;
-}
-html[class*="docs-doc-id-index"] main {
-  max-width: 100%;
-}
-
-.menu__list .menu__list {
-  border-left: 1px solid var(--ifm-toc-border-color);
 }
 
 /******** AUTH ********/
