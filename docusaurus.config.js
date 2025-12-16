@@ -49,10 +49,19 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        items: [
+          {
+            href: "https://github.com/chaveamin/rtl-theme-docs",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+        ],
         title: "راهنمای محصولات",
         logo: {
           alt: "لوگو",
-          src: "img/logo.png",
+          src: "img/logo.svg",
+          style: { height: "38px" },
         },
       },
       footer: {

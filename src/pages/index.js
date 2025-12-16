@@ -5,19 +5,19 @@ import styles from "./styles.module.css";
 
 const ProductList = [
   {
-    icon: "./appkit.png",
+    icon: "/img/appkit.png",
     title: "استیکی",
     description: <>قالب وب اپلیکیشن استیکی</>,
     url: "/category/اپکیت",
   },
   {
-    icon: "./appkit.png",
+    icon: "/img/appkit.png",
     title: "اپکیت",
     description: <>قالب وب اپلیکیشن اپکیت</>,
     url: "/category/اپکیت",
   },
   {
-    icon: "./appkit.png",
+    icon: "/img/appkit.png",
     title: "دیوو",
     description: <>قالب وب اپلیکیشن دیوو</>,
     url: "/category/اپکیت",
@@ -26,7 +26,7 @@ const ProductList = [
 
 export default function Landing() {
   return (
-    <Layout title="محصولات">
+    <Layout title="امین چاوه پور">
       <div className={`${styles.landing} container`}>
         <header>
           <h1>محصولات</h1>
@@ -38,9 +38,15 @@ export default function Landing() {
                 key={p.title}
                 href={p.url}
                 className={styles["product-card"]}>
-                <img src={p.icon} />
-                <Heading as="h3">{p.title}</Heading>
-                <p>{p.description}</p>
+                <img
+                  className={styles["product-icon"]}
+                  src={p.icon}
+                  alt="آیکون"
+                />
+                <div>
+                  <Heading as="h3">{p.title}</Heading>
+                  <p>{p.description}</p>
+                </div>
               </Link>
             ))}
           </div>
