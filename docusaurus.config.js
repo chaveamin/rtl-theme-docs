@@ -10,11 +10,11 @@ const config = {
     v4: true,
   },
 
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://rtl-theme-docs.ir/",
   baseUrl: "/",
 
-  organizationName: "facebook",
-  projectName: "docusaurus",
+  organizationName: "designesia",
+  projectName: "rtl-theme-docs",
 
   onBrokenLinks: "throw",
 
@@ -57,6 +57,7 @@ const config = {
       },
       footer: {
         copyright: "طراحی و توسعه توسط امین چاوه پور",
+        style: "dark",
       },
       prism: {
         theme: prismThemes.oneDark,

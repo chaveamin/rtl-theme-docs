@@ -12,8 +12,7 @@ export default function DocItemWrapper(props) {
   }
 
   return (
-    <ProtectedRoute currentPath={location.pathname}>
-      <DocItem {...props} />
-    </ProtectedRoute>
+    <DocItem {...props} />
+    // <ProtectedRoute currentPath={location.pathname}></ProtectedRoute>
   );
 }
