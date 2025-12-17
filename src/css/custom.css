@@ -15,8 +15,8 @@
   --ifm-color-primary-lighter: #746deb;
   --ifm-color-primary-lightest: #9a95f0;
   --ifm-heading-color: #27272a;
-  --ifm-navbar-shadow: 0 19px 28px rgba(0, 0, 0, 0.02),
-    0 0px 42px rgba(0, 0, 0, 0.06);
+  --ifm-navbar-shadow: 0px 0px 1px rgba(0, 0, 0, 0.02),
+    0px 2px 10px rgba(0, 0, 0, 0.02);
   --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -27,6 +27,8 @@
   --ifm-toc-padding-vertical: 14px;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
   --ifm-breadcrumb-border-radius: 7px;
+  --sidebar-bg-color: rgba(250, 250, 250, 0.5);
+  --ifm-menu-link-padding-vertical: 12px;
 }
 
 [data-theme="dark"] {
@@ -38,6 +40,13 @@
   --ifm-color-primary-lighter: #e2e6fe;
   --ifm-color-primary-lightest: #ffffff;
   --ifm-heading-color: #eef2ff;
+  --sidebar-bg-color: var(--ifm-color-emphasis-100);
+}
+
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  line-height: 2em;
 }
 
 html {
@@ -49,7 +58,7 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   left: auto !important;
 }
 .main-wrapper {
-  margin-top: 26px;
+  margin-top: 12px;
 }
 .navbar__search-input {
   direction: rtl;
@@ -71,6 +80,7 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
 .menu__caret,
 .menu__list-item-collapsible {
   border-radius: 8px;
+  font-weight: 400;
 }
 .backToTopButton_sjWU {
   border-radius: 10px;
@@ -113,9 +123,46 @@ p > img {
 .menu__list .menu__list,
 .table-of-contents ul {
   border-left: 1px solid var(--ifm-toc-border-color);
+  margin-left: 10px;
 }
 .breadcrumbsContainer_Z_bl {
   margin-bottom: 40px;
+}
+
+/* .navbar--fixed-top {
+  top: 10px;
+}
+.navbar {
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid rgba(39, 39, 42, 0.05);
+} */
+
+.theme-doc-sidebar-container {
+  background: var(--sidebar-bg-color);
+}
+.menu__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 2.5px;
+  border-radius: 8px;
+  height: 16px;
+  background-color: var(--ifm-menu-color-active);
+}
+.theme-doc-sidebar-item-link .menu__link--active::before {
+  left: -13.5px;
+}
+.menu__link--active,
+.menu__list-item-collapsible--active {
+  position: relative;
+  background: none;
+  font-weight: 700;
+}
+.menu {
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 /******** AUTH ********/

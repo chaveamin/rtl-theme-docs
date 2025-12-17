@@ -52,7 +52,6 @@ const config = {
         logo: {
           alt: "لوگو",
           src: "img/logo.svg",
-          style: { height: "38px" },
         },
         items: [
           {
