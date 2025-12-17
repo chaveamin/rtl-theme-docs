@@ -110,6 +110,10 @@ p > img {
   mask-image: url("../../static/img/githubicon.svg");
   mask-repeat: no-repeat;
 }
+.menu__list .menu__list,
+.table-of-contents ul {
+  border-left: 1px solid var(--ifm-toc-border-color);
+}
 
 /******** AUTH ********/
 .auth-wrapper {
