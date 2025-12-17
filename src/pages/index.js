@@ -8,19 +8,19 @@ const ProductList = [
     icon: "/img/sticky.png",
     title: "استیکی",
     description: <>قالب وب اپلیکیشن استیکی</>,
-    url: "/category/اپکیت",
+    url: "/category/appkit",
   },
   {
     icon: "/img/appkit.png",
     title: "اپکیت",
     description: <>قالب وب اپلیکیشن اپکیت</>,
-    url: "/category/اپکیت",
+    url: "/category/appkit",
   },
   {
     icon: "/img/due.png",
     title: "دیوو",
     description: <>قالب وب اپلیکیشن دیوو</>,
-    url: "/category/اپکیت",
+    url: "/category/appkit",
   },
 ];
 

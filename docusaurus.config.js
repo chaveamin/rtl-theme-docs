@@ -49,6 +49,11 @@ const config = {
       },
       navbar: {
         title: "مستندات محصولات راست چین",
+        logo: {
+          alt: "لوگو",
+          src: "img/logo.svg",
+          style: { height: "38px" },
+        },
         items: [
           {
             href: "https://github.com/chaveamin/rtl-theme-docs",
@@ -57,11 +62,6 @@ const config = {
             "aria-label": "GitHub repository",
           },
         ],
-        logo: {
-          alt: "لوگو",
-          src: "img/logo.svg",
-          style: { height: "38px" },
-        },
       },
       footer: {
         copyright: "طراحی و توسعه توسط امین چاوه پور",

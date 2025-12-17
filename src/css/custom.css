@@ -86,13 +86,13 @@ html[dir="rtl"] .searchBarContainer_NW3z .searchClearButton_qk4g {
   font-weight: 800;
 }
 
-/* p > code,
+p > code,
 li > code,
 strong > code {
   --ifm-code-font-size: 85%;
   border-radius: 6px;
   padding: 1.6px 6px;
-} */
+}
 p > img {
   border: 2px solid var(--ifm-color-secondary-light);
   border-radius: 12px;
@@ -113,6 +113,9 @@ p > img {
 .menu__list .menu__list,
 .table-of-contents ul {
   border-left: 1px solid var(--ifm-toc-border-color);
+}
+.breadcrumbsContainer_Z_bl {
+  margin-bottom: 40px;
 }
 
 /******** AUTH ********/
