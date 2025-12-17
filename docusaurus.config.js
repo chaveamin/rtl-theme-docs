@@ -44,11 +44,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/docusaurus-social-card.jpg",
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        title: "مستندات محصولات راست چین",
         items: [
           {
             href: "https://github.com/chaveamin/rtl-theme-docs",
@@ -57,7 +57,6 @@ const config = {
             "aria-label": "GitHub repository",
           },
         ],
-        title: "راهنمای محصولات",
         logo: {
           alt: "لوگو",
           src: "img/logo.svg",

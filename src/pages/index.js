@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const ProductList = [
   {
-    icon: "/img/appkit.png",
+    icon: "/img/sticky.png",
     title: "استیکی",
     description: <>قالب وب اپلیکیشن استیکی</>,
     url: "/category/اپکیت",
@@ -17,7 +17,7 @@ const ProductList = [
     url: "/category/اپکیت",
   },
   {
-    icon: "/img/appkit.png",
+    icon: "/img/due.png",
     title: "دیوو",
     description: <>قالب وب اپلیکیشن دیوو</>,
     url: "/category/اپکیت",
