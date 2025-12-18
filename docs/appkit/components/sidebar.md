@@ -5,7 +5,7 @@ sidebar_position: 30
 
 # نوار کناری(sidebar)
 
-:::warning
+:::rtnote نکته
 
 این المان باید خارج از محتوای صفحه قرار گیرد
 

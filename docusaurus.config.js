@@ -31,11 +31,11 @@ const config = {
         docs: {
           admonitions: {
             keywords: ["rtnote", "rtwarn", "rterror"],
-            extendDefaults: true,
+            extendDefaults: false,
           },
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {

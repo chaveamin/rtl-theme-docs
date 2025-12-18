@@ -259,3 +259,28 @@ p > img {
 .auth-submit:hover {
   background-color: #6366f1;
 }
+
+/* ************* Custom admonitions **************** */
+
+.rtalert {
+  padding: 20px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+}
+.rtalert p {
+  margin-bottom: 0;
+}
+.rtalert__rtnote {
+  background-color: rgb(59 130 246 / 7%);
+  border-color: rgb(59 130 246 / 15%);
+}
+
+.rtalert__title {
+  font-size: 16px;
+  display: inline-block;
+}
+.rtalert__icon {
+  display: inline-block;
+  margin-right: 4px;
+}
