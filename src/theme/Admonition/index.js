@@ -1,18 +1,36 @@
-import React from 'react';
-import {processAdmonitionProps} from '@docusaurus/theme-common';
-import AdmonitionTypes from '@theme/Admonition/Types';
-function getAdmonitionTypeComponent(type) {
-  const component = AdmonitionTypes[type];
-  if (component) {
-    return component;
-  }
-  console.warn(
-    `No admonition component found for admonition type "${type}". Using Info as fallback.`,
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
+
+// Define your custom admonition types
+const admonitionTypes = {
+  success: {
+    label: "rtnote",
+    icon: "📝",
+    className: "rtnote",
+  },
+  error: {
+    label: "rtwarn",
+    icon: "⚠️",
+    className: "rtwarn",
+  },
+  question: {
+    label: "rterror",
+    icon: "💀",
+    className: "rterror",
+  },
+};
+
+export default function Admonition({ children, type = "custom", title }) {
+  const config = admonitionTypes[type] || admonitionTypes.custom;
+
+  return (
+    <div className={clsx(styles.admonition, styles[config.className])}>
+      <div className={styles.admonitionHeading}>
+        <span className={styles.admonitionIcon}>{config.icon}</span>
+        <span className={styles.admonitionTitle}>{title || config.label}</span>
+      </div>
+      <div className={styles.admonitionContent}>{children}</div>
+    </div>
   );
-  return AdmonitionTypes.info;
-}
-export default function Admonition(unprocessedProps) {
-  const props = processAdmonitionProps(unprocessedProps);
-  const AdmonitionTypeComponent = getAdmonitionTypeComponent(props.type);
-  return <AdmonitionTypeComponent {...props} />;
 }
