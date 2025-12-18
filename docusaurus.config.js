@@ -29,6 +29,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          admonitions: {
+            keywords: ["rtnote", "rtwarn", "rterror"],
+            extendDefaults: true,
+          },
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
           showLastUpdateTime: true,
@@ -48,7 +52,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "مستندات محصولات راست چین",
+        title: "مستندات",
         logo: {
           alt: "لوگو",
           src: "img/logo.svg",
