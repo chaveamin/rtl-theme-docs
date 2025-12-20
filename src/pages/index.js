@@ -5,22 +5,16 @@ import styles from "./styles.module.css";
 
 const ProductList = [
   {
-    icon: "/img/sticky.png",
-    title: "استیکی",
-    description: <>قالب وب اپلیکیشن استیکی</>,
-    url: "/products/appkit",
-  },
-  {
     icon: "/img/appkit.png",
     title: "اپکیت",
     description: <>قالب وب اپلیکیشن اپکیت</>,
-    url: "/products/appkit",
+    url: "/appkit/intro",
   },
   {
-    icon: "/img/due.png",
-    title: "دیوو",
-    description: <>قالب وب اپلیکیشن دیوو</>,
-    url: "/products/appkit",
+    icon: "/img/appkit.png",
+    title: "هاستلر",
+    description: <>قالب هاستینگ هاستلر</>,
+    url: "/hostlar/intro",
   },
 ];
 

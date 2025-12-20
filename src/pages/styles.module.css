@@ -3,7 +3,6 @@
   text-align: center;
   flex-direction: column;
   row-gap: 36px;
-  padding: 5rem 1rem 2rem 1rem;
 }
 .landing > * {
   width: 100%;

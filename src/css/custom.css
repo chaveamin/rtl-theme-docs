@@ -158,9 +158,6 @@ p > img {
   height: 18px;
   background-color: var(--ifm-menu-color-active);
 }
-.theme-doc-sidebar-item-link .menu__link--active::before {
-  left: -13.5px;
-}
 .menu__link--active,
 .menu__list-item-collapsible--active {
   position: relative;
