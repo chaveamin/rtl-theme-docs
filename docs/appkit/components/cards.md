@@ -1,6 +1,5 @@
 ---
 description: انعطاف‌پذیرترین کارت‌های دنیا
-sidebar_position: 8
 ---
 
 # کارت ها

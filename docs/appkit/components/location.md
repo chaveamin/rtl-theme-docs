@@ -1,6 +1,5 @@
 ---
 description: دریافت مکان جغرافیایی.
-sidebar_position: 19
 ---
 
 # مکان جغرافیایی

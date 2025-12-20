@@ -1,5 +1,4 @@
 ---
-sidebar_position: 8
 description: استفاده از قالب به عنوان یک وب اپلیکیشن
 ---
 

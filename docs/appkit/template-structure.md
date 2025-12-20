@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 description: صفحه starter.html و ساختارهای اولیه صفحه توضیح داده شده است.
 ---
 

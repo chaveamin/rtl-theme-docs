@@ -1,6 +1,5 @@
 ---
 description: اطلاعات کوچک.
-sidebar_position: 11
 ---
 
 # چیپ ها

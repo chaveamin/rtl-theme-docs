@@ -1,6 +1,5 @@
 ---
 description: ساخته شده توسط سیستم input بوت‌استرپ.
-sidebar_position: 20
 ---
 
 # اینپوت ها(inputs)

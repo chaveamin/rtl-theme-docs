@@ -1,6 +1,5 @@
 ---
 description: جداسازی عناصر محتوا
-sidebar_position: 16
 ---
 
 # جدا کننده ها

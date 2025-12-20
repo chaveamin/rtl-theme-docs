@@ -1,6 +1,5 @@
 ---
 description: آپلود فایل.
-sidebar_position: 18
 ---
 
 # آپلود فایل ها

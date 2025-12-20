@@ -1,5 +1,4 @@
 ---
-sidebar_position: 7
 description: برگه‌های اقدام، مودال ها، نوارهای کناری.
 ---
 

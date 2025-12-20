@@ -1,6 +1,5 @@
 ---
 description: کامنت گذاری
-sidebar_position: 15
 ---
 
 # پلاگین کامنت گذاری Discus

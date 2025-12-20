@@ -1,6 +1,5 @@
 ---
 description: هر چیزی را اسلاید کنید.
-sidebar_position: 9
 ---
 
 # carousel

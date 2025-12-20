@@ -1,6 +1,5 @@
 ---
 description: استایل دهی به تصاویر
-sidebar_position: 21
 ---
 
 # تصاویر

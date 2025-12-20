@@ -1,6 +1,5 @@
 ---
 description: سیستم جستجوی قالب
-sidebar_position: 29
 ---
 
 # جستجو

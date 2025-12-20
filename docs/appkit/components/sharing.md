@@ -1,6 +1,5 @@
 ---
 description: اشتراک گذاری خودکار لینک ها
-sidebar_position: 28
 ---
 
 # اشتراک گذاری

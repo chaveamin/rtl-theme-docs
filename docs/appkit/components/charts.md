@@ -1,6 +1,5 @@
 ---
 description: قدرت گرفته از chartsjs. بهترین افزونه نمودار.
-sidebar_position: 10
 ---
 
 # نمودارها

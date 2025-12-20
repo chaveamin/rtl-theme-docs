@@ -1,6 +1,5 @@
 ---
 description: ساخته شده با استفاده از سیستم collapse بوت‌استرپ.
-sidebar_position: 12
 ---
 
 # جمع شدنی ها(collapse)

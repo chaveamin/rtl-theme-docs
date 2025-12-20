@@ -1,6 +1,5 @@
 ---
 description: نمایش پیش‌بارگذار قبل از بارگذاری صفحه
-sidebar_position: 25
 ---
 
 # پیش‌بارگذار(preloader)

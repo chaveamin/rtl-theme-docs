@@ -1,6 +1,5 @@
 ---
 description: ساخته شده برای حداکثر انعطاف پذیری
-sidebar_position: 32
 ---
 
 # تب ها

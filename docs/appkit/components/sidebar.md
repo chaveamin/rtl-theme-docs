@@ -1,6 +1,5 @@
 ---
 description: پیشرفته ترین سیستم نوار کناری در هر قالب موبایل
-sidebar_position: 30
 ---
 
 # نوار کناری(sidebar)
