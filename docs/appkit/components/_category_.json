@@ -1,6 +1,8 @@
 {
-  "label": "المان ها",
+  "label": "Components",
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "title": "المان ها",
+    "slug": "/appkit/components"
   }
 }
