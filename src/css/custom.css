@@ -155,7 +155,7 @@ p > img {
   display: block;
   width: 2.5px;
   border-radius: 8px;
-  height: 16px;
+  height: 18px;
   background-color: var(--ifm-menu-color-active);
 }
 .theme-doc-sidebar-item-link .menu__link--active::before {
@@ -166,6 +166,7 @@ p > img {
   position: relative;
   background: none;
   font-weight: 700;
+  color: var(--ifm-color-primary-darkest);
 }
 .menu {
   padding: 0.5rem 1rem 0.5rem 1rem;
