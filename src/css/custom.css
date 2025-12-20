@@ -7,13 +7,13 @@
 }
 
 :root {
-  --ifm-color-primary: #4f46e5;
-  --ifm-color-primary-dark: #362ce1;
-  --ifm-color-primary-darker: #2a1fdf;
-  --ifm-color-primary-darkest: #231ab8;
-  --ifm-color-primary-light: #6860e9;
-  --ifm-color-primary-lighter: #746deb;
-  --ifm-color-primary-lightest: #9a95f0;
+  --ifm-color-primary: #71717a;
+  --ifm-color-primary-dark: #66666e;
+  --ifm-color-primary-darker: #606068;
+  --ifm-color-primary-darkest: #4f4f55;
+  --ifm-color-primary-light: #7c7c86;
+  --ifm-color-primary-lighter: #83838c;
+  --ifm-color-primary-lightest: #95959d;
   --ifm-heading-color: #27272a;
   --ifm-navbar-shadow: 0px 0px 1px rgba(0, 0, 0, 0.02),
     0px 2px 10px rgba(0, 0, 0, 0.02);
@@ -32,12 +32,12 @@
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #a5b4fc;
-  --ifm-color-primary-dark: #7d92fb;
-  --ifm-color-primary-darker: #6882fa;
-  --ifm-color-primary-darkest: #2c4ff8;
-  --ifm-color-primary-light: #cdd6fd;
-  --ifm-color-primary-lighter: #e2e6fe;
+  --ifm-color-primary: #d4d4d8;
+  --ifm-color-primary-dark: #bebec4;
+  --ifm-color-primary-darker: #b2b2b9;
+  --ifm-color-primary-darkest: #91919b;
+  --ifm-color-primary-light: #eaeaec;
+  --ifm-color-primary-lighter: #f6f6f7;
   --ifm-color-primary-lightest: #ffffff;
   --ifm-heading-color: #eef2ff;
   --sidebar-bg-color: var(--ifm-color-emphasis-100);
@@ -57,10 +57,11 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
-.main-wrapper:has(> .container) {
+.main-wrapper:has(.container) {
   background-image: url("../../static/img/hero-bg.svg");
   background-position: center center;
   background-size: cover;
+  justify-content: center;
 }
 .main-wrapper {
   margin-top: 12px;
@@ -275,7 +276,8 @@ p > img {
   display: flex;
   flex-direction: column;
   align-items: start;
-  row-gap: 12px;
+  row-gap: 8px;
+  margin-bottom: 1rem;
 }
 .rtalert__heading {
   display: flex;
@@ -313,4 +315,11 @@ p > img {
 [data-theme="dark"] .rtalert__error *,
 [data-theme="dark"] .rtalert__note * {
   color: #f4f4f5;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

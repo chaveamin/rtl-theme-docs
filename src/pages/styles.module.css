@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 .product-card {
-  background: #fff;
+  background: var(--ifm-card-background-color);
   display: flex;
   align-items: start;
   column-gap: 16px;
