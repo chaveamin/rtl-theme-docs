@@ -57,6 +57,11 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
+.main-wrapper:has(> .container) {
+  background-image: url("../../static/img/hero-bg.svg");
+  background-position: center center;
+  background-size: cover;
+}
 .main-wrapper {
   margin-top: 12px;
 }
@@ -267,20 +272,45 @@ p > img {
   border-radius: 12px;
   border-width: 2px;
   border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12px;
+}
+.rtalert__heading {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
 }
 .rtalert p {
+  line-height: 2em;
+}
+.rtalert p,
+.rtalert .rtalert-title {
   margin-bottom: 0;
 }
-.rtalert__rtnote {
+.rtalert__note {
   background-color: rgb(59 130 246 / 7%);
-  border-color: rgb(59 130 246 / 15%);
+  border-color: rgb(59 130 246 / 50%);
+}
+.rtalert__note * {
+  color: #142149;
+}
+.rtalert__error * {
+  color: #450a0a;
+}
+.rtalert__error {
+  background-color: rgb(239 68 68 / 7%);
+  border-color: rgb(239 68 68 / 50%);
 }
 
-.rtalert__title {
-  font-size: 16px;
-  display: inline-block;
+[data-theme="dark"] .rtalert__heading .rtalert-icon path {
+  stroke: #f4f4f5;
 }
-.rtalert__icon {
-  display: inline-block;
-  margin-right: 4px;
+[data-theme="dark"] .rtalert__heading .rtalert-icon path {
+  stroke: #f4f4f5;
+}
+[data-theme="dark"] .rtalert__error *,
+[data-theme="dark"] .rtalert__note * {
+  color: #f4f4f5;
 }
