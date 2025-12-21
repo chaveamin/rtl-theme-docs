@@ -12,7 +12,7 @@ const sidebars = {
         "appkit/color-highlights-backgrounds",
         "appkit/menus-main",
         "appkit/menus",
-        "appkit/pwa",
+        "appkit/PWA",
         "appkit/faq",
       ],
     },
