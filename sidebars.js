@@ -2,17 +2,23 @@
 
 const sidebars = {
   pwaSidebar: [
-    "appkit/intro",
-    "appkit/template-structure",
-    "appkit/secondary-classes",
-    "appkit/color-highlights-backgrounds",
-    "appkit/menus-main",
-    "appkit/menus",
-    "appkit/pwa",
-    "appkit/faq",
     {
       type: "category",
-      label: "المان",
+      label: "اپکیت",
+      items: [
+        "appkit/intro",
+        "appkit/template-structure",
+        "appkit/secondary-classes",
+        "appkit/color-highlights-backgrounds",
+        "appkit/menus-main",
+        "appkit/menus",
+        "appkit/pwa",
+        "appkit/faq",
+      ],
+    },
+    {
+      type: "category",
+      label: "المان ها",
       items: [
         "appkit/components/main-card-style",
         "appkit/components/accordions",

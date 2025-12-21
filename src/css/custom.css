@@ -135,16 +135,6 @@ p > img {
   margin-bottom: 40px;
 }
 
-/* .navbar--fixed-top {
-  top: 10px;
-}
-.navbar {
-  width: 98%;
-  margin: 0 auto;
-  border-radius: 10px;
-  border: 1px solid rgba(39, 39, 42, 0.05);
-} */
-
 .theme-doc-sidebar-container {
   background: var(--sidebar-bg-color);
 }
@@ -153,7 +143,7 @@ p > img {
   position: absolute;
   left: 0;
   display: block;
-  width: 2.5px;
+  width: 3px;
   border-radius: 8px;
   height: 18px;
   background-color: var(--ifm-menu-color-active);
