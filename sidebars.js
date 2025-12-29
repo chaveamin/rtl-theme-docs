@@ -58,7 +58,12 @@ const sidebars = {
         {
           type: "category",
           label: "صفحات",
-          items: ["appkit/pages/pages", "appkit/pages/component-built-pages"],
+          items: [
+            "appkit/pages/pages",
+            "appkit/pages/component-built-pages",
+            "appkit/pages/full-screen-pages",
+            "appkit/pages/galleries",
+          ],
         },
       ],
     },
