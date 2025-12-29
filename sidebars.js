@@ -13,7 +13,6 @@ const sidebars = {
         "appkit/menus-main",
         "appkit/menus",
         "appkit/pwa",
-        "appkit/faq",
         {
           type: "category",
           label: "المان ها",
@@ -65,6 +64,7 @@ const sidebars = {
             "appkit/pages/galleries",
           ],
         },
+        "appkit/faq",
       ],
     },
   ],
