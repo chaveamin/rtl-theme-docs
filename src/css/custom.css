@@ -59,6 +59,10 @@ html[dir="rtl"] .searchHintContainer_Pkmr {
   right: 10px !important;
   left: auto !important;
 }
+ol li::marker {
+  font-size: 17px;
+  font-weight: bold;
+}
 .main-wrapper:has(.container) {
   background-image: url("../../static/img/hero-bg.svg");
   background-position: center center;
@@ -111,7 +115,8 @@ strong > code {
   border-radius: 6px;
   padding: 1.6px 6px;
 }
-p > img {
+p > img,
+li > img {
   border: 2px solid var(--ifm-color-secondary-light);
   border-radius: 12px;
   box-shadow: var(--img-shadow);
