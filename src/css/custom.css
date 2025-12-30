@@ -29,6 +29,7 @@
   --ifm-breadcrumb-border-radius: 7px;
   --sidebar-bg-color: rgba(250, 250, 250, 0.5);
   --ifm-menu-link-padding-vertical: 12px;
+  --ifm-hr-background-color: var(--ifm-color-emphasis-300);
 }
 
 [data-theme="dark"] {
@@ -50,6 +51,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-variation-settings: "dots" 1;
   font-feature-settings: "ss02";
 }
