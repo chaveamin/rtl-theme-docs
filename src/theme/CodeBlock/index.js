@@ -12,13 +12,14 @@ export default function CodeBlockWrapper(props) {
         <span
           style={{
             position: "absolute",
-            top: "8px",
+            bottom: "8px",
             right: "12px",
             fontSize: "10px",
-            fontWeight: "300",
+            fontWeight: "400",
             opacity: 0.6,
             textTransform: "uppercase",
             pointerEvents: "none",
+            userSelect: "none",
             zIndex: 1,
             color: "#fff",
           }}
