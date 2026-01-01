@@ -43,7 +43,9 @@
   --ifm-heading-color: #eef2ff;
   --sidebar-bg-color: var(--ifm-color-emphasis-100);
 }
-
+pre {
+  scrollbar-width: none;
+}
 .markdown > pre,
 .markdown > ul,
 .markdown > p {
@@ -122,16 +124,24 @@ li > img {
   box-shadow: var(--img-shadow);
 }
 
-.header-github-link::before {
+.header-rtl-theme-link::before {
   content: "";
-  background-color: var(--ifm-navbar-link-color);
+  background-image: url("../../static/img/rtl-logo.png");
+  background-size: contain;
   width: 24px;
   height: 24px;
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-  display: flex;
-  mask-image: url("../../static/img/githubicon.svg");
-  mask-repeat: no-repeat;
+  display: block;
+}
+[data-theme="dark"] .header-github-link::before {
+  background-image: url("../../static/img/github-icon-dark.png");
+}
+.header-github-link::before {
+  content: "";
+  background-image: url("../../static/img/github-icon.png");
+  background-size: contain;
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 .menu__list .menu__list,
 .table-of-contents ul {

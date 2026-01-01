@@ -64,6 +64,11 @@ const config = {
             className: "header-github-link",
             "aria-label": "GitHub repository",
           },
+          {
+            href: "https://www.rtl-theme.com/author/chaveamin",
+            position: "right",
+            className: "header-rtl-theme-link",
+          },
         ],
       },
       footer: {
