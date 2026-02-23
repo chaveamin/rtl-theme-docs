@@ -26,7 +26,7 @@ const ProductList = [
     icon: "/img/p-icons/pocketinvoice.png",
     title: "پاکت",
     description: <>قالب فاکتور پاکت</>,
-    url: "/pocketinvoice/intro",
+    url: "/pocketinvoice/help",
   },
 ];
 

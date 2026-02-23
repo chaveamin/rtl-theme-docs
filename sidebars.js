@@ -184,7 +184,7 @@ const sidebars = {
     },
     "duo/faq",
   ],
-  pocketinvoiceSidebar: ["pocketinvoice/intro"],
+  pocketinvoiceSidebar: ["pocketinvoice/help"],
 };
 
 export default sidebars;
