@@ -184,7 +184,7 @@ const sidebars = {
     },
     "duo/faq",
   ],
-  hostlarSidebar: ["hostlar/intro"],
+  pocketinvoiceSidebar: ["pocketinvoice/intro"],
 };
 
 export default sidebars;

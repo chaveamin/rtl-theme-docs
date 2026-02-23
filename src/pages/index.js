@@ -23,46 +23,10 @@ const ProductList = [
     url: "/duo/intro",
   },
   {
-    icon: "/img/p-icons/hostlar.png",
-    title: "هاستلر",
-    description: <>قالب هاستینگ هاستلر</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "هاستیم",
-    description: <>قالب هاستینگ هاستیم</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "برد",
-    description: <>قالب هاستینگ برد</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "نوهاست",
-    description: <>قالب هاستینگ نوهاست</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "هورن",
-    description: <>قالب هاستینگ هورن</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "کوو وی اچ ام",
-    description: <>قالب هاستینگ کوو وی اچ ام</>,
-    url: "/hostlar/intro",
-  },
-  {
-    icon: "/img/p-icons/hostlar.png",
-    title: "ایمی یو آی",
-    description: <>قالب هاستینگ ایمی یو آی</>,
-    url: "/hostlar/intro",
+    icon: "/img/p-icons/pocketinvoice.png",
+    title: "پاکت",
+    description: <>قالب فاکتور پاکت</>,
+    url: "/pocketinvoice/intro",
   },
 ];
 
