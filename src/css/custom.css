@@ -1,6 +1,7 @@
 @font-face {
   font-family: "IRANYekan";
-  src: url("../../static/font/IRANYekanXVF.woff2") format("woff2-variations"),
+  src:
+    url("../../static/font/IRANYekanXVF.woff2") format("woff2-variations"),
     url("../../static/font/IRANYekanXVF.woff2") format("woff2");
   font-weight: 100 1000;
   font-display: fallback;
@@ -15,8 +16,8 @@
   --ifm-color-primary-lighter: #83838c;
   --ifm-color-primary-lightest: #95959d;
   --ifm-heading-color: #27272a;
-  --ifm-navbar-shadow: 0px 0px 1px rgba(0, 0, 0, 0.02),
-    0px 2px 10px rgba(0, 0, 0, 0.02);
+  --ifm-navbar-shadow:
+    0px 0px 1px rgba(0, 0, 0, 0.02), 0px 2px 10px rgba(0, 0, 0, 0.02);
   --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -133,14 +134,14 @@ li > img {
   display: block;
 }
 [data-theme="dark"] .header-github-link::before {
-  background-image: url("../../static/img/github-icon-dark.png");
+  background-image: url("../../static/img/github-icon-dark.svg");
 }
 .header-github-link::before {
   content: "";
-  background-image: url("../../static/img/github-icon.png");
+  background-image: url("../../static/img/github-icon.svg");
   background-size: contain;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   display: block;
 }
 .menu__list .menu__list,
