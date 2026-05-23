@@ -25,8 +25,14 @@ const ProductList = [
   {
     icon: "/img/p-icons/pocketinvoice.png",
     title: "پاکت",
-    description: <>قالب فاکتور پاکت</>,
+    description: <>قالب فاکتور whmcs پاکت</>,
     url: "/pocketinvoice/help",
+  },
+  {
+    icon: "/img/p-icons/bredh.png",
+    title: "برد",
+    description: <>قالب هاستیگ</>,
+    url: "/bredh/help",
   },
 ];
 
