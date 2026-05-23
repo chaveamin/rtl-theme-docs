@@ -66,12 +66,7 @@ ol li::marker {
   font-size: 17px;
   font-weight: bold;
 }
-.main-wrapper:has(.container) {
-  background-image: url("../../static/img/hero-bg.svg");
-  background-position: center center;
-  background-size: cover;
-  justify-content: center;
-}
+
 .main-wrapper {
   margin-top: 12px;
 }
@@ -120,9 +115,8 @@ strong > code {
 }
 p > img,
 li > img {
-  border: 2px solid var(--ifm-color-secondary-light);
-  border-radius: 12px;
-  box-shadow: var(--img-shadow);
+  border: 4px solid var(--ifm-color-secondary);
+  border-radius: 18px;
 }
 
 .header-rtl-theme-link::before {
@@ -288,7 +282,7 @@ li > img {
 
 .rtalert {
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 18px;
   border-width: 2px;
   border-style: solid;
   display: flex;
