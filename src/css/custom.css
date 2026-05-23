@@ -68,7 +68,8 @@ ol li::marker {
 }
 
 .main-wrapper {
-  margin-top: 12px;
+  padding-top: 12px;
+  justify-content: center;
 }
 .navbar__search-input {
   direction: rtl;

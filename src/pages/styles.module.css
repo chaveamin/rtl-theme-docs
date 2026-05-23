@@ -19,7 +19,7 @@
   column-gap: 16px;
   text-align: right;
   border: 2px solid var(--ifm-color-emphasis-200);
-  border-radius: 12px;
+  border-radius: 16px;
   color: var(--ifm-color-primary);
   transition: all 0.1s ease;
   text-decoration: none;
