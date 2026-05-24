@@ -1,0 +1,20 @@
+---
+description: هر محتوایی را در سایت خود قرار دهید.
+---
+
+# Embed و Embedly
+
+دو روش اصلی برای جاسازی محتوا در قالب وجود دارد. یکی از قدیمی ترین آنها کپی کردن کد embed HTML است.
+
+{/* prettier-ignore */}
+```html
+<div class="responsive-iframe">
+    <iframe src='https://www.youtube.com/embed/c9MnSeYYtYY' frameborder='0' allowfullscreen></iframe>
+</div>
+```
+
+کد embed بالا بطور خودکار iframe را در دستگاه های تلفن همراه ریسپانسیو میکند. iframe خود را در داخل div کپی کنید و پارامترهای عرض و ارتفاعی را که iframe embed همراه با آن است حذف کنید.
+
+## Embedly
+
+المان **component-embedly.html** از پیشرفته ترین سیستم embed در جهان است که در حال حاضر در دسترس سایت های HTML است. Embedly یک کد جاسازی برای اکثر وب سایت هایی از آن پشتیبانی میکند ایجاد میکند. سایت های پشتیبانی شده را میتوانید [اینجا](https://embed.ly/providers) مشاهده کنید.
