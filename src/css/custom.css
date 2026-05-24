@@ -308,10 +308,10 @@ li > img {
   background-color: rgb(59 130 246 / 7%);
   border-color: rgb(59 130 246 / 50%);
 }
-.rtalert__note * {
+.rtalert__note *:not(a) {
   color: #142149;
 }
-.rtalert__error * {
+.rtalert__error *:not(a) {
   color: #450a0a;
 }
 .rtalert__error {
@@ -325,8 +325,8 @@ li > img {
 [data-theme="dark"] .rtalert__heading .rtalert-icon path {
   stroke: #f4f4f5;
 }
-[data-theme="dark"] .rtalert__error *,
-[data-theme="dark"] .rtalert__note * {
+[data-theme="dark"] .rtalert__error *:not(a),
+[data-theme="dark"] .rtalert__note *:not(a) {
   color: #f4f4f5;
 }
 
