@@ -31,7 +31,7 @@ const config = {
         docs: {
           admonitions: {
             keywords: ["rtnote", "rtwarn", "rterror"],
-            extendDefaults: false,
+            extendDefaults: true,
           },
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
