@@ -1,45 +1,57 @@
 ---
-title: "فالب هاستینگ برد"
-description: "راهنمای فالب هاستینگ برد"
+title: "فالب هاستینگ coowhm"
+description: "راهنمای فالب هاستینگ coowhm"
 ---
 
 # راهنما
 
-## نصب نسخه whmcs
+## نصب
 
 ### ساختار فایل زیپ
 
 ```bash
-bredh
-├── HTML
-└── WHMCS x.x.x
-    └── templates
-        ├── bredh-noon
-        ├── bredh-sefar
-        └── orderforms
-
+WHMCS x.x.x
+└── templates
+    ├── coowhm-plus
+    ├── coowhm-style-2
+    └── orderforms
 ```
 
 برای نصب قالب پوشه `WHMCS x.x.x` را در محل نصب whmcs خود آپلود کنید.\
-سپس در تنظمات عمومی و قالب و فرم سفارش را تغییر دهید. قالب 2 دمو دارد که میتوانید به دلخواه انتخاب کنید `bredh-moon` و `bred-sefar`
+سپس در تنظمات عمومی و قالب و فرم سفارش را تغییر دهید. قالب 2 دمو دارد که میتوانید به دلخواه انتخاب کنید:
 
-![bredh-install](../../static/img/bredh/bredh-install-1.png)
-![bredh-install](../../static/img/bredh/bredh-install-2.png)
-![bredh-install](../../static/img/bredh/bredh-install-3.png)
-![bredh-install](../../static/img/bredh/bredh-install-4.png)
+- `coowhm-old`: دموی قدیمی
+- `coowhm-theme`: دموی جدید با رابط کاربری مدرن تر
 
-## نصب نسخه html
-
-برای نصب این نسخه کافیه پوشه `HTML` را در هاست خود آپلود کنید.
+![coohm-install](../../static/img/bredh/bredh-install-1.png)
+![coohm-install](../../static/img/bredh/bredh-install-2.png)
+![coohm-install](../../static/img/bredh/bredh-install-3.png)
+![coohm-install](../coowhm/coowhm-install.png)
 
 :::rtnote[نکات]
 
-1. برای شخص سازی هر دو نسخه نیازمند دانش کدنویسی هستید.
+1. برای شخص سازی قالب نیازمند دانش کدنویسی هستید.
 2. جهت هرگونه شخصی سازی یا راهنما از طریق [تیکت](https://www.rtl-theme.com/dashboard/#/ticket-send) در راست چین در ارتباط باشید.
 
 :::
 
 ## شخصی سازی قالب
+
+داخل پوشه هر دو دمو یک پوشه به نام `template-parts` وجود دارد که میتوانید محتوای قالب را با آن شخصی سازی کنید.
+
+```bash
+template-parts
+├── banners
+│   └── banner-01.tpl    // بنر صفحه اصلی
+├── elements
+│   └── rtl-elements
+│       ├── homepage-discount.tpl     // بنر تخفیف در پایین صفحه اصلی
+│       └── ...
+├── blog-loader.tpl
+├── cart.tpl
+├── language.tpl
+└── ...
+```
 
 در بعضی از فایل ها نوشته ها به صورت `{$LANG.xxx.xxx}` است. سیستم WHMCS چند زبانه است و برای نمایش قالب به زبان مورد نظر هنگام تغییر آن در صفحه اصلی، whmcs آن را از فایل زبان خود میگیرد.\
 فایل های زبان در مسیر `[whmcs_root]/langs` قرار دارند. با ویرایش این فایل ها، بعد از آپدیت whmcs همه ویرایشات به نسخه اولیه خود برمیگردند. برای ویرایش فایل های زبان مراحل زیر را دنبال کنید:
