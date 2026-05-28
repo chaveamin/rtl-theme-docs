@@ -40,6 +40,12 @@ const ProductList = [
     description: <>قالب هاستیگ</>,
     url: "/coowhm/help",
   },
+  {
+    icon: "/img/p-icons/horn.png",
+    title: "هورن",
+    description: <>قالب هاستیگ</>,
+    url: "/horn/help",
+  },
 ];
 
 export default function Landing() {
