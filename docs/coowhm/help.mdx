@@ -37,21 +37,7 @@ WHMCS x.x.x
 
 ## شخصی سازی قالب
 
-داخل پوشه هر دو دمو یک پوشه به نام `template-parts` وجود دارد که میتوانید محتوای قالب را با آن شخصی سازی کنید.
-
-```bash
-template-parts
-├── banners
-│   └── banner-01.tpl    // بنر صفحه اصلی
-├── elements
-│   └── rtl-elements
-│       ├── homepage-discount.tpl     // بنر تخفیف در پایین صفحه اصلی
-│       └── ...
-├── blog-loader.tpl
-├── cart.tpl
-├── language.tpl
-└── ...
-```
+### ویرایش نوشته ها
 
 در بعضی از فایل ها نوشته ها به صورت `{$LANG.xxx.xxx}` است. سیستم WHMCS چند زبانه است و برای نمایش قالب به زبان مورد نظر هنگام تغییر آن در صفحه اصلی، whmcs آن را از فایل زبان خود میگیرد.\
 فایل های زبان در مسیر `[whmcs_root]/langs` قرار دارند. با ویرایش این فایل ها، بعد از آپدیت whmcs همه ویرایشات به نسخه اولیه خود برمیگردند. برای ویرایش فایل های زبان مراحل زیر را دنبال کنید:
@@ -60,7 +46,68 @@ template-parts
 2. فایل هر زبانی را که میخواهید ویرایش کنید را در این پوشه قرار دهید.
 3. فایل را باز کنید و همه رشته های موجود از خط `if (!defined("WHMCS")) die("This file cannot be accessed directly");` به پایین را پاک کنید. (این کار ضروری نیست و فقط برای دسترسی آسان به رشته ها است)
 4. برای ویرایش رشته های پیشفرض، کلمه مورد نظر را در فایل جستجو و ویرایش کنید.\
-   مثال: `$_LANG['account'] = "حساب";` --> `$_LANG['account'] = "داشبورد";`\
-    همچنین برای ایجاد یک رشته جدید یکی از رشته هارا برای نمونه کپی و آن را تغییر دهید.\
-    مثال: `$_LANG['print'] = "پرینت";` --> `$_LANG['chap'] = "چاپ";`\
-    سپس در قالب به این صورت میتوانید از آن استفاده کنید: `{$LANG.chap}`
+   مثال:
+
+   ```php
+   <?php
+    /**
+     * WHMCS Language File
+    * Persian (fa_IR)
+    *
+    * Please Note: These language files are overwritten during software updates
+    * and therefore editing of these files directly is not advised. Instead we
+    * recommend that you use overrides to customise the text displayed in a way
+    * which will be safely preserved through the upgrade process.
+    *
+    * For instructions on overrides, please visit:
+    *   https://developers.whmcs.com/languages/overrides/
+    *
+    * @package    WHMCS
+    * @author     WHMCS Limited <development@whmcs.com>
+    * @copyright  Copyright (c) WHMCS Limited 2005-2026
+    * @license    https://www.whmcs.com/license/ WHMCS Eula
+    * @version    $Id$
+    * @link       https://www.whmcs.com/
+    */
+
+    if (!defined("WHMCS")) die("This file cannot be accessed directly");
+
+    $_LANG['account'] = "داشبورد";
+    ?>
+   ```
+
+   همچنین برای ایجاد یک رشته جدید یکی از رشته هارا برای نمونه کپی و آن را تغییر دهید.\
+    مثال:
+
+   ```php
+   <?php
+    /**
+     * WHMCS Language File
+    * Persian (fa_IR)
+    *
+    * Please Note: These language files are overwritten during software updates
+    * and therefore editing of these files directly is not advised. Instead we
+    * recommend that you use overrides to customise the text displayed in a way
+    * which will be safely preserved through the upgrade process.
+    *
+    * For instructions on overrides, please visit:
+    *   https://developers.whmcs.com/languages/overrides/
+    *
+    * @package    WHMCS
+    * @author     WHMCS Limited <development@whmcs.com>
+    * @copyright  Copyright (c) WHMCS Limited 2005-2026
+    * @license    https://www.whmcs.com/license/ WHMCS Eula
+    * @version    $Id$
+    * @link       https://www.whmcs.com/
+    */
+
+    if (!defined("WHMCS")) die("This file cannot be accessed directly");
+
+    $_LANG['chap'] = "چاپ";
+   ```
+
+   سپس در قالب به این صورت میتوانید از آن استفاده کنید:
+
+   ```html
+   <div class="title">{lang key='chap'}</div>
+   ```
