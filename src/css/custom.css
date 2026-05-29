@@ -336,3 +336,11 @@ li > img {
   align-items: center;
   justify-content: center;
 }
+
+.theme-code-block-highlighted-line {
+  border-right: 4px solid #5eead4;
+}
+
+.theme-code-block {
+  direction: rtl;
+}

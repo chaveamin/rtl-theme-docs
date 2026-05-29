@@ -46,6 +46,12 @@ const ProductList = [
     description: <>قالب هاستیگ</>,
     url: "/horn/help",
   },
+  {
+    icon: "/img/p-icons/nuhost.png",
+    title: "نوهاست",
+    description: <>قالب هاستیگ</>,
+    url: "/nuhost/help",
+  },
 ];
 
 export default function Landing() {
