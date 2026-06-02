@@ -52,6 +52,12 @@ const ProductList = [
     description: <>قالب هاستیگ</>,
     url: "/nuhost/help",
   },
+  {
+    icon: "/img/p-icons/emyui.png",
+    title: "emyui",
+    description: <>قالب هاستیگ</>,
+    url: "/emyui/help",
+  },
 ];
 
 export default function Landing() {
