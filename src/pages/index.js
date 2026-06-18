@@ -58,6 +58,12 @@ const ProductList = [
     description: <>قالب هاستیگ</>,
     url: "/emyui/help",
   },
+  {
+    icon: "/img/p-icons/elansaz.png",
+    title: "اعلان ساز",
+    description: <>افزونه اعلان مشتری WHMCS</>,
+    url: "/elansaz-whmcs-module/install",
+  },
 ];
 
 export default function Landing() {

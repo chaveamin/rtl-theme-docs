@@ -184,7 +184,10 @@ const sidebars = {
     },
     "duo/faq",
   ],
-  pocketinvoiceSidebar: ["pocketinvoice/help"],
+  elansazSidebar: [
+    "elansaz-whmcs-module/install",
+    "elansaz-whmcs-module/configuration",
+  ],
 };
 
 export default sidebars;
