@@ -7,25 +7,25 @@ const ProductList = [
   {
     icon: "/img/p-icons/sticky.png",
     title: "استیکی",
-    description: <>قالب وب اپلیکیشن استیکی</>,
+    description: <>قالب وب اپلیکیشن</>,
     url: "/sticky/intro",
   },
   {
     icon: "/img/p-icons/appkit.png",
     title: "اپکیت",
-    description: <>قالب وب اپلیکیشن اپکیت</>,
+    description: <>قالب وب اپلیکیشن</>,
     url: "/appkit/intro",
   },
   {
     icon: "/img/p-icons/duo.png",
     title: "دیوو",
-    description: <>قالب وب اپلیکیشن دیوو</>,
+    description: <>قالب وب اپلیکیشن</>,
     url: "/duo/intro",
   },
   {
     icon: "/img/p-icons/pocketinvoice.png",
     title: "پاکت",
-    description: <>قالب فاکتور whmcs پاکت</>,
+    description: <>قالب فاکتور whmcs</>,
     url: "/pocketinvoice/help",
   },
   {

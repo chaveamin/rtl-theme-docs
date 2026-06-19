@@ -10,7 +10,8 @@
 .product-cards {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+  margin-bottom: 24px;
 }
 .product-card {
   background: var(--ifm-card-background-color);
