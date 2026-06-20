@@ -3,6 +3,9 @@ title: "استایل ها"
 description: "راهنمای افزونه اعلان ساز whmcs"
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # استایل ها
 
 ![elansaz](../../static/img/elansaz/elansaz-29.webp)
@@ -37,7 +40,85 @@ description: "راهنمای افزونه اعلان ساز whmcs"
     نوشتن `{root} .es-panel { border-radius: 4px; }` تضمین میکند که CSS سفارشی شما منحصراً اعلان را هدف قرار میدهد و نه چیز دیگری در صفحه قالب سایت شما.
 - **قالب HTML:** به شما امکان میدهد اسکلت HTML پیشفرض ماژول را به طور کامل با اسکلت HTML خودتان جایگزین کنید. شما HTML خام خود را مینویسید و از متغییرها برای تعیین محل تزریق محتوای دیتابیس به ماژول استفاده میکنید.
   - متغییرهای پشتیبانی شده: `{title}`, `{body}`, `{button}`, `{image}`, `{close}`, `{secondary_close}`, `{actions}`, `{auto_close}`, `{permanent_close}`, `{accent}`, `{content}`
-  - مثال: اگر میخواهید تصویر به جای بالا در پایین باشد، کافیست جای متغییرهای `{image}` و `{body}` را در HTML سفارشی خود جابه‌جا کنید.
+
+### مثال
+
+یک مثال از نحوه استفاده از قالب HTML و CSS سفارشی برای ایجاد طرح‌بندی تقسیم صفحه (تصویر در سمت چپ، متن در سمت راست).
+
+این 2 کد را در فیلد های مربوطه قرار دهید. توجه کنید که چگونه ازمتغییرهای `{}` ماژول برای تزریق محتوا در جایی که میخواهیم، ​​درون تگ‌های `<div>` سفارشی خود استفاده میکنیم. همچنین توجه کنید که در کد CSS از تگ `{root}` استفاده کنید تا استایل‌ها فقط روی اعلان تأثیر بگذارد و به قالب WHMCS شما سرایت نکند.
+
+<Tabs>
+    <TabItem value="html" label="قالب HTML">
+    ```html 
+      <div class="custom-split-layout">
+        <div class="custom-text-column">
+          {close}
+          <div class="custom-inner-content">
+            {title} {body} {actions} {auto_close} {permanent_close}
+          </div>
+        </div>
+        <div class="custom-image-column">{image}</div>
+      </div>
+    ```
+    </TabItem>
+    
+    <TabItem value="css" label="CSS سفارشی">
+    ```css
+      {root} .es-panel {
+          padding: 0;
+          max-width: 850px;
+          border-radius: 16px;
+          overflow: hidden;
+      }
+
+      {root} .custom-split-layout {
+          display: flex;
+          flex-direction: row;
+          min-height: 400px;
+          background: #ffffff;
+      }
+      {root} .custom-image-column {
+          flex: 1;
+          background: #f8fafc;
+          position: relative;
+      }
+      {root} .custom-image-column .es-image-main {
+          height: 100%;
+      }
+      {root} .custom-image-column img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+      {root} .custom-text-column {
+          flex: 1.2;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          position: relative;
+      }
+
+      {root} .es-close {
+          top: 15px;
+          left: 15px;
+          background: #f1f5f9;
+      }
+    ```
+    </TabItem>
+
+</Tabs>
+
+![elansaz](../../static/img/elansaz/elansaz-31.webp)
+
+#### چگونگی کارکرد:
+
+وقتی اعلان از این استایل استفاده میکند، افزونه کد HTML را فراخوانی میکند. متن فارسی یا انگلیسی که ادمین در پنل افزونه وارد کرده است را میگیرد، آن را به HTML تبدیل میکند و آن را با `{title}` و `{body}` جایگزین میکند. سپس تصویر آپلود شده را میگیرد و `{image}` را جایگزین میکند.
+
+این به شما آزادی کامل در ظاهر اعلان میدهد. اگر زمانی خواستید طرح‌بندی را تغییر دهید تا تصویر در سمت راست باشد، کافیست `<div class="custom-image-column">` را به زیر ستون متن در قالب HTML منتقل کنید.
 
 ### مدیریت استایل ها و استایل های پیشفرض
 
