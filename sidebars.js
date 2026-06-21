@@ -186,6 +186,7 @@ const sidebars = {
   ],
   elansazSidebar: [
     "elansaz-whmcs-module/install",
+    "elansaz-whmcs-module/update",
     "elansaz-whmcs-module/configuration",
     "elansaz-whmcs-module/advanced",
     "elansaz-whmcs-module/styles",
