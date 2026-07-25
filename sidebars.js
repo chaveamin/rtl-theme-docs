@@ -191,7 +191,14 @@ const sidebars = {
     "elansaz-whmcs-module/advanced",
     "elansaz-whmcs-module/styles",
     "elansaz-whmcs-module/license-support",
+    "elansaz-whmcs-module/changelog",
   ],
+  emyuiSidebar: ["emyui/help"],
+  coowhmSidebar: ["coowhm/help"],
+  hornSidebar: ["horn/help"],
+  bredhSidebar: ["bredh/help"],
+  pocketinvoiceSidebar: ["pocketinvoice/help"],
+  nuhostSidebar: ["nuhost/help"],
 };
 
 export default sidebars;

@@ -45,6 +45,22 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "./plugins/changelog/index.js",
+      {
+        products: [["elansaz-whmcs-module", "اعلان‌ساز WHMCS"]].map(
+          ([slug, name]) => ({
+            slug,
+            source: `changelogs/${slug}.md`,
+            title: `لیست تغییرات`,
+            description: `تغییرات نسخه‌های ${name}`,
+          }),
+        ),
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
