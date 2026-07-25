@@ -32,6 +32,7 @@
   --ifm-menu-link-padding-vertical: 12px;
   --ifm-hr-background-color: var(--ifm-color-emphasis-300);
   --ifm-list-item-margin: 0.7rem;
+  --ifm-link-color: #2872fe;
 }
 
 [data-theme="dark"] {
@@ -75,6 +76,9 @@ ol li::marker {
 .main-wrapper {
   padding-top: 12px;
   justify-content: center;
+}
+.main-wrapper:has(.changelog-release) .col.col--3 {
+  display: none;
 }
 .navbar__search-input {
   direction: rtl;
@@ -364,13 +368,12 @@ li > img {
 .changelog-release {
   margin-block: 1.25rem;
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 12px;
+  border-radius: 18px;
   background: var(--ifm-background-surface-color);
 }
 
 .changelog-release--latest {
   padding: clamp(1.25rem, 3vw, 2.5rem);
-  border-color: transparent;
   box-shadow: 0 12px 38px rgb(0 0 0 / 7%);
 }
 
@@ -395,6 +398,7 @@ li > img {
   color: var(--ifm-color-emphasis-700);
   font-size: 0.9rem;
   white-space: nowrap;
+  font-weight: 600;
 }
 
 .changelog-release ul {
@@ -405,7 +409,7 @@ li > img {
 
 .changelog-release li {
   margin-block: 0.7rem;
-  line-height: 1.9;
+  line-height: 2em;
 }
 
 .changelog-badge {
@@ -415,6 +419,12 @@ li > img {
   border-radius: 4px;
   font-size: 0.75rem;
   line-height: 1.65;
+}
+
+.changelog-release p {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
 }
 
 .changelog-badge--added {
@@ -462,8 +472,9 @@ li > img {
 .changelog-release__version {
   margin-inline-end: auto;
   color: var(--ifm-heading-color);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-inline-start: 6px;
 }
 
 .changelog-release__body {
@@ -489,5 +500,11 @@ li > img {
   .changelog-release__summary::before {
     order: 2;
     margin-inline-start: auto;
+  }
+}
+
+@media (min-width: 997px) {
+  .main-wrapper:has(.changelog-release) .docItemCol_VOVn {
+    min-width: 97% !important;
   }
 }

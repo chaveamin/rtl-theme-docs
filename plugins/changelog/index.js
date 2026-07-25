@@ -35,14 +35,19 @@ function badgeClass(label) {
 }
 
 function renderBody(body) {
-  const sections = [...body.matchAll(/(?:^|\n)###\s+([^\n]+)\n([\s\S]*?)(?=\n###\s|$)/g)];
+  const sections = [
+    ...body.matchAll(/(?:^|\n)###\s+([^\n]+)\n([\s\S]*?)(?=\n###\s|$)/g),
+  ];
   if (sections.length === 0) return body;
 
   return sections
     .map(([, label, sectionBody]) => {
       const lines = sectionBody.trim().split("\n");
       const items = lines.filter((line) => /^-\s+/.test(line));
-      const remainder = lines.filter((line) => !/^-\s+/.test(line)).join("\n").trim();
+      const remainder = lines
+        .filter((line) => !/^-\s+/.test(line))
+        .join("\n")
+        .trim();
       const list = items
         .map(
           (item) =>
@@ -57,8 +62,8 @@ function renderBody(body) {
 function renderLatest({ title, date, body }) {
   return `<article className="changelog-release changelog-release--latest">
   <header className="changelog-release__header">
-    <h3>نسخه ${title}</h3>
-    <span className="changelog-release__date">انتشار: <time dateTime="${date}">${formatPersianDate(date)}</time></span>
+    <h3>نسخه <span className="changelog-release__version">${title}</span></h3>
+    <span className="changelog-release__date"><time dateTime="${date}">${formatPersianDate(date)}</time></span>
   </header>
 
 ${renderBody(body)}
@@ -69,8 +74,8 @@ ${renderBody(body)}
 function renderOlder({ title, date, body }) {
   return `<details className="changelog-release changelog-release--collapsed">
   <summary className="changelog-release__summary">
-    <span className="changelog-release__version">نسخه ${title}</span>
-    <span className="changelog-release__date">انتشار: <time dateTime="${date}">${formatPersianDate(date)}</time></span>
+    <span className="changelog-release__version">نسخه <span className="changelog-release__version">${title}</span></span>
+    <span className="changelog-release__date"><time dateTime="${date}">${formatPersianDate(date)}</time></span>
   </summary>
   <div className="changelog-release__body">
 
@@ -83,7 +88,7 @@ ${renderBody(body)}
 function createDoc(product, content) {
   const entries = parseEntries(content);
   const releases = entries.length
-    ? `## آخرین نسخه\n\n${renderLatest(entries[0])}\n\n${entries
+    ? `### آخرین نسخه\n\n${renderLatest(entries[0])}\n\n${entries
         .slice(1)
         .map(renderOlder)
         .join("\n\n")}`
@@ -102,24 +107,37 @@ ${releases}
 export default async function changelogPlugin(context, options) {
   const products = options.products ?? [];
 
-  // Plugin factories run before content loading, so the docs plugin discovers
-  // these generated pages in the same build.
-  await Promise.all(
-    products.map(async (product) => {
-      const source = path.join(context.siteDir, product.source);
-      const output = path.join(
-        context.siteDir,
-        "docs",
-        product.slug,
-        "changelog.mdx",
-      );
-      const content = await fs.readFile(source, "utf8");
-      await fs.outputFile(output, createDoc(product, content));
-    }),
-  );
+  async function generateChangelogs() {
+    await Promise.all(
+      products.map(async (product) => {
+        const source = path.join(context.siteDir, product.source);
+        const output = path.join(
+          context.siteDir,
+          "docs",
+          product.slug,
+          "changelog.mdx",
+        );
+        const content = await fs.readFile(source, "utf8");
+        const nextDoc = createDoc(product, content);
+
+        // Avoid a redundant write (and a second watcher event) when unchanged.
+        const currentDoc = await fs.readFile(output, "utf8").catch(() => null);
+        if (currentDoc !== nextDoc) await fs.outputFile(output, nextDoc);
+      }),
+    );
+  }
+
+  // Generate once before the docs plugin discovers its source files.
+  await generateChangelogs();
 
   return {
     name: "multi-product-changelog-plugin",
+    // Docusaurus reruns this lifecycle when getPathsToWatch() changes. Writing
+    // the generated MDX then lets the normal docs watcher hot-reload the page.
+    async loadContent() {
+      await generateChangelogs();
+      return null;
+    },
     getPathsToWatch: () =>
       products.map((product) => path.join(context.siteDir, product.source)),
   };
