@@ -120,20 +120,16 @@ export default async function changelogPlugin(context, options) {
         const content = await fs.readFile(source, "utf8");
         const nextDoc = createDoc(product, content);
 
-        // Avoid a redundant write (and a second watcher event) when unchanged.
         const currentDoc = await fs.readFile(output, "utf8").catch(() => null);
         if (currentDoc !== nextDoc) await fs.outputFile(output, nextDoc);
       }),
     );
   }
 
-  // Generate once before the docs plugin discovers its source files.
   await generateChangelogs();
 
   return {
     name: "multi-product-changelog-plugin",
-    // Docusaurus reruns this lifecycle when getPathsToWatch() changes. Writing
-    // the generated MDX then lets the normal docs watcher hot-reload the page.
     async loadContent() {
       await generateChangelogs();
       return null;

@@ -72,7 +72,9 @@ ol li::marker {
   font-size: 17px;
   font-weight: bold;
 }
-
+.pagination-nav__link {
+  color: var(--ifm-color-primary-darker);
+}
 .main-wrapper {
   padding-top: 12px;
   justify-content: center;
