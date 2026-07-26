@@ -73,15 +73,15 @@ ${renderBody(body)}
 
 function renderOlder({ title, date, body }) {
   return `<details className="changelog-release changelog-release--collapsed">
-  <summary className="changelog-release__summary">
-    <span className="changelog-release__version">نسخه <span className="changelog-release__version">${title}</span></span>
-    <span className="changelog-release__date"><time dateTime="${date}">${formatPersianDate(date)}</time></span>
-  </summary>
-  <div className="changelog-release__body">
+<summary className="changelog-release__summary">
+  <span className="changelog-release__version">نسخه <span className="changelog-release__version">${title}</span></span>
+  <span className="changelog-release__date"><time dateTime="${date}">${formatPersianDate(date)}</time></span>
+</summary>
+<div className="changelog-release__body">
 
 ${renderBody(body)}
 
-  </div>
+</div>
 </details>`;
 }
 

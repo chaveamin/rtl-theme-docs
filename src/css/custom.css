@@ -33,6 +33,7 @@
   --ifm-hr-background-color: var(--ifm-color-emphasis-300);
   --ifm-list-item-margin: 0.7rem;
   --ifm-link-color: #2872fe;
+  --docusaurus-details-decoration-color: var(--ifm-color-gray-800);
 }
 
 [data-theme="dark"] {
@@ -387,6 +388,10 @@ li > img {
   gap: 1rem;
 }
 
+.changelog-release__body {
+  padding: 0 2.5rem;
+}
+
 .changelog-release__header {
   margin-bottom: 1.5rem;
 }
@@ -412,6 +417,9 @@ li > img {
 .changelog-release li {
   margin-block: 0.7rem;
   line-height: 2em;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
 }
 
 .changelog-badge {
@@ -421,12 +429,6 @@ li > img {
   border-radius: 4px;
   font-size: 0.75rem;
   line-height: 1.65;
-}
-
-.changelog-release p {
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--ifm-color-primary);
 }
 
 .changelog-badge--added {
@@ -450,7 +452,7 @@ li > img {
 }
 
 .changelog-release__summary {
-  padding: 1.5rem 2rem;
+  padding: 0.3rem 1.3rem;
   cursor: pointer;
   list-style: none;
 }
@@ -460,15 +462,7 @@ li > img {
 }
 
 .changelog-release__summary::before {
-  content: "+";
-  color: var(--ifm-color-emphasis-500);
-  font-size: 1.75rem;
-  font-weight: 300;
-  line-height: 1;
-}
-
-.changelog-release[open] > .changelog-release__summary::before {
-  content: "−";
+  display: none;
 }
 
 .changelog-release__version {
@@ -479,9 +473,10 @@ li > img {
   margin-inline-start: 6px;
 }
 
-.changelog-release__body {
-  padding: 0 2rem 1.5rem;
-  border-top: 1px solid var(--ifm-color-emphasis-200);
+.collapsibleContent_i85q {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
 }
 
 @media (max-width: 600px) {
