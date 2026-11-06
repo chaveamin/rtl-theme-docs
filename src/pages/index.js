@@ -1,68 +1,19 @@
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
-import styles from "./styles.module.css";
+import styles from "../components/ProductLanding/styles.module.css";
+import "../css/custom.css";
 
-const ProductList = [
+const CatList = [
   {
-    icon: "/img/p-icons/sticky.png",
-    title: "استیکی",
-    description: <>قالب وب اپلیکیشن</>,
-    url: "/sticky/intro",
+    icon: "/img/theme.png",
+    title: "قالب",
+    url: "/themes",
   },
   {
-    icon: "/img/p-icons/appkit.png",
-    title: "اپکیت",
-    description: <>قالب وب اپلیکیشن</>,
-    url: "/appkit/intro",
-  },
-  {
-    icon: "/img/p-icons/duo.png",
-    title: "دیوو",
-    description: <>قالب وب اپلیکیشن</>,
-    url: "/duo/intro",
-  },
-  {
-    icon: "/img/p-icons/pocketinvoice.png",
-    title: "پاکت",
-    description: <>قالب فاکتور whmcs</>,
-    url: "/pocketinvoice/help",
-  },
-  {
-    icon: "/img/p-icons/bredh.png",
-    title: "برد",
-    description: <>قالب هاستیگ</>,
-    url: "/bredh/help",
-  },
-  {
-    icon: "/img/p-icons/coowhm.png",
-    title: "coowhm",
-    description: <>قالب هاستیگ</>,
-    url: "/coowhm/help",
-  },
-  {
-    icon: "/img/p-icons/horn.png",
-    title: "هورن",
-    description: <>قالب هاستیگ</>,
-    url: "/horn/help",
-  },
-  {
-    icon: "/img/p-icons/nuhost.png",
-    title: "نوهاست",
-    description: <>قالب هاستیگ</>,
-    url: "/nuhost/help",
-  },
-  {
-    icon: "/img/p-icons/emyui.png",
-    title: "emyui",
-    description: <>قالب هاستیگ</>,
-    url: "/emyui/help",
-  },
-  {
-    icon: "/img/p-icons/elansaz.png",
-    title: "اعلان ساز",
-    description: <>افزونه اعلان مشتری WHMCS</>,
-    url: "/elansaz-whmcs-module/install",
+    icon: "/img/plugin.png",
+    title: "افزونه",
+    url: "/modules",
   },
 ];
 
@@ -74,22 +25,13 @@ export default function Landing() {
           <h1>محصولات</h1>
         </header>
         <section>
-          <div className={styles["product-cards"]}>
-            {ProductList.map((p) => (
-              <Link
-                key={p.title}
-                href={p.url}
-                className={styles["product-card"]}
-              >
-                <img
-                  className={styles["product-icon"]}
-                  src={p.icon}
-                  alt="آیکون"
-                />
-                <div>
-                  <Heading as="h3">{p.title}</Heading>
-                  <p>{p.description}</p>
-                </div>
+          <div className="cat-cards">
+            {CatList.map((p) => (
+              <Link key={p.title} href={p.url} className="cat-card">
+                <img className="prod-icon" src={p.icon} alt="آیکون" />
+                <Heading className="cat-card-title" as="h3">
+                  {p.title}
+                </Heading>
               </Link>
             ))}
           </div>

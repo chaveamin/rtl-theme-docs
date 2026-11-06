@@ -40,8 +40,13 @@
   font-weight: 700;
 }
 .product-icon {
-  width: 46px;
-  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  border-radius: 20px;
+  background-color: var(--ifm-color-emphasis-100);
+}
+.product-icon img {
+  width: 38px;
 }
 .product-card:hover {
   background-color: var(--ifm-color-emphasis-200);

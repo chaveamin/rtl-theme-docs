@@ -479,6 +479,44 @@ li > img {
   padding-top: 0;
 }
 
+.cat-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 28px;
+}
+
+.cat-card {
+  width: 35%;
+  background: var(--ifm-card-background-color);
+  text-align: left;
+  border: 2px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-primary);
+  border-radius: 24px;
+  align-items: center;
+  row-gap: 16px;
+  padding: 24px;
+  text-decoration: none;
+  transition: all 0.1s;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.cat-card:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  border-color: #6366f1;
+  box-shadow: none;
+}
+
+.prod-icon {
+  width: 8rem;
+  height: auto;
+}
+
+.cat-card-title {
+  font-size: 48px;
+}
+
 @media (max-width: 600px) {
   .changelog-release__header,
   .changelog-release__summary {
