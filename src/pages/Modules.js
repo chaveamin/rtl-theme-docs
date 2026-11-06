@@ -17,7 +17,7 @@ const ProductList = [
     icon: "/img/p-icons/taeedban.png",
     title: "تایید‌بان",
     description: "افزونه تایید ایمیل whmcs",
-    url: "/pocketinvoice/help",
+    url: "/taeedban-whmcs-module/install",
   },
 ];
 

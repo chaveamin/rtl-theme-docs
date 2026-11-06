@@ -482,7 +482,7 @@ li > img {
 .cat-cards {
   display: flex;
   justify-content: center;
-  column-gap: 28px;
+  gap: 28px;
 }
 
 .cat-card {
@@ -535,6 +535,15 @@ li > img {
   .changelog-release__summary::before {
     order: 2;
     margin-inline-start: auto;
+  }
+
+  .cat-card {
+    width: 100%;
+  }
+
+  .cat-cards {
+    display: flex;
+    flex-direction: column;
   }
 }
 
