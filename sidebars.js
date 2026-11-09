@@ -199,7 +199,6 @@ const sidebars = {
     "taeedban-whmcs-module/records",
     "taeedban-whmcs-module/logs",
     "taeedban-whmcs-module/tools",
-    "taeedban-whmcs-module/license",
   ],
   emyuiSidebar: ["emyui/help"],
   coowhmSidebar: ["coowhm/help"],
