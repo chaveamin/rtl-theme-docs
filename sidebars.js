@@ -346,6 +346,7 @@ const sidebars = {
             "modules/taeedban-whmcs-module/records",
             "modules/taeedban-whmcs-module/logs",
             "modules/taeedban-whmcs-module/tools",
+            "modules/taeedban-whmcs-module/license",
           ],
         },
       ],
