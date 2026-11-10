@@ -49,6 +49,12 @@ const ProductList = [
     description: <>قالب هاستیگ</>,
     url: "/emyui/help",
   },
+  {
+    icon: "/img/p-icons/hostim.png",
+    title: "Hostim",
+    description: <>قالب هاستیگ</>,
+    url: "/hostim/help",
+  },
 ];
 
 export default function Themes() {

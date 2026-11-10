@@ -206,6 +206,7 @@ const sidebars = {
   bredhSidebar: ["bredh/help"],
   pocketinvoiceSidebar: ["pocketinvoice/help"],
   nuhostSidebar: ["nuhost/help"],
+  hostimSidebar: ["hostim/help"],
 };
 
 export default sidebars;
