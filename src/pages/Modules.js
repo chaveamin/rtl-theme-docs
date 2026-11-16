@@ -14,10 +14,10 @@ const ProductList = [
     url: "/modules/pocketinvoice/help",
   },
   {
-    icon: "/img/p-icons/taeedban.png",
-    title: "تایید‌بان",
+    icon: "/img/p-icons/mailino.png",
+    title: "میلینو",
     description: "افزونه تایید ایمیل whmcs",
-    url: "/modules/taeedban-whmcs-module/install",
+    url: "/modules/mailino-whmcs-module/install",
   },
 ];
 

@@ -332,21 +332,21 @@ const sidebars = {
       ],
     },
   ],
-  taeedbanSidebar: [
+  mailinoSidebar: [
     {
       type: "category",
       label: "ماژول",
       items: [
         {
           type: "category",
-          label: "تایید‌بان",
+          label: "میلینو",
           items: [
-            "modules/taeedban-whmcs-module/install",
-            "modules/taeedban-whmcs-module/configuration",
-            "modules/taeedban-whmcs-module/records",
-            "modules/taeedban-whmcs-module/logs",
-            "modules/taeedban-whmcs-module/tools",
-            "modules/taeedban-whmcs-module/license",
+            "modules/mailino-whmcs-module/install",
+            "modules/mailino-whmcs-module/configuration",
+            "modules/mailino-whmcs-module/records",
+            "modules/mailino-whmcs-module/logs",
+            "modules/mailino-whmcs-module/tools",
+            "modules/mailino-whmcs-module/license",
           ],
         },
       ],
